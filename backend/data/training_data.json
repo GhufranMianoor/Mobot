@@ -1,20 +1,3116 @@
 {
   "samples": [
-    {"ram_gb": 3, "storage_gb": 32, "camera_mp": 13, "battery_mah": 4000, "processor_tier": 0, "tier_label": 0},
-    {"ram_gb": 4, "storage_gb": 64, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 0, "tier_label": 0},
-    {"ram_gb": 4, "storage_gb": 64, "camera_mp": 48, "battery_mah": 5000, "processor_tier": 1, "tier_label": 1},
-    {"ram_gb": 6, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 1, "tier_label": 1},
-    {"ram_gb": 8, "storage_gb": 128, "camera_mp": 64, "battery_mah": 5000, "processor_tier": 1, "tier_label": 1},
-    {"ram_gb": 8, "storage_gb": 256, "camera_mp": 108, "battery_mah": 5000, "processor_tier": 2, "tier_label": 2},
-    {"ram_gb": 12, "storage_gb": 256, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 2, "tier_label": 2},
-    {"ram_gb": 12, "storage_gb": 512, "camera_mp": 200, "battery_mah": 5000, "processor_tier": 2, "tier_label": 3},
-    {"ram_gb": 16, "storage_gb": 512, "camera_mp": 200, "battery_mah": 5000, "processor_tier": 2, "tier_label": 3},
-    {"ram_gb": 6, "storage_gb": 128, "camera_mp": 108, "battery_mah": 6000, "processor_tier": 1, "tier_label": 1},
-    {"ram_gb": 8, "storage_gb": 256, "camera_mp": 50, "battery_mah": 6000, "processor_tier": 1, "tier_label": 2},
-    {"ram_gb": 12, "storage_gb": 256, "camera_mp": 108, "battery_mah": 5500, "processor_tier": 2, "tier_label": 2},
-    {"ram_gb": 4, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 0, "tier_label": 1},
-    {"ram_gb": 8, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 0, "tier_label": 1},
-    {"ram_gb": 3, "storage_gb": 32, "camera_mp": 8, "battery_mah": 3000, "processor_tier": 0, "tier_label": 0},
-    {"ram_gb": 16, "storage_gb": 1024, "camera_mp": 200, "battery_mah": 5000, "processor_tier": 2, "tier_label": 3}
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 1450,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 3,
+      "battery_mah": 1900,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 1450,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 32,
+      "camera_mp": 8,
+      "battery_mah": 3800,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 32,
+      "camera_mp": 13,
+      "battery_mah": 3200,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 16,
+      "battery_mah": 3300,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 64,
+      "camera_mp": 16,
+      "battery_mah": 3000,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 32,
+      "camera_mp": 16,
+      "battery_mah": 3400,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 2900,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 16,
+      "battery_mah": 3600,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 3500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 2700,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 32,
+      "camera_mp": 13,
+      "battery_mah": 3500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 3300,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 3000,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 16,
+      "battery_mah": 3500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 16,
+      "battery_mah": 3800,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 3400,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 32,
+      "camera_mp": 16,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 3300,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 32,
+      "camera_mp": 16,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 32,
+      "camera_mp": 8,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 32,
+      "camera_mp": 8,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 16,
+      "battery_mah": 3100,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 32,
+      "camera_mp": 8,
+      "battery_mah": 3400,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 3100,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 32,
+      "camera_mp": 8,
+      "battery_mah": 3500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 2700,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 16,
+      "battery_mah": 3600,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 4000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 32,
+      "camera_mp": 8,
+      "battery_mah": 4000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2700,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2800,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 4000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 2600,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3000,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2900,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 4500,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 2,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 3100,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3200,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2600,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 3500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3100,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3600,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 3000,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3500,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3300,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3100,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2600,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2600,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 5260,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 2600,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3800,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 48,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 5200,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 64,
+      "camera_mp": 50,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 3,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3200,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2800,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 48,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2800,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 8,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 48,
+      "battery_mah": 3100,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 13,
+      "battery_mah": 4200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 8,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 48,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2600,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "camera_mp": 13,
+      "battery_mah": 7000,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 13,
+      "battery_mah": 2700,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 5030,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3100,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 2500,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 8,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 13,
+      "battery_mah": 2700,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 3000,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 48,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 6000,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 5160,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 6100,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 6000,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 5500,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 2600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 7200,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 2500,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 7200,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 4300,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3900,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 4800,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 2800,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 128,
+      "camera_mp": 64,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 1024,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 64,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 1024,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3900,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 1024,
+      "camera_mp": 50,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 64,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 6150,
+      "processor_tier": 0,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 2900,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 1024,
+      "camera_mp": 64,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 2700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3400,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 64,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 1024,
+      "camera_mp": 50,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 6500,
+      "processor_tier": 0,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 7000,
+      "processor_tier": 0,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 512,
+      "camera_mp": 64,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 1024,
+      "camera_mp": 108,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 1024,
+      "camera_mp": 200,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 1024,
+      "camera_mp": 108,
+      "battery_mah": 3000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 5100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 4200,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 3300,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 16,
+      "storage_gb": 1024,
+      "camera_mp": 200,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3900,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 1024,
+      "camera_mp": 50,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 1024,
+      "camera_mp": 108,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 16,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 1024,
+      "camera_mp": 50,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 1024,
+      "camera_mp": 50,
+      "battery_mah": 3700,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 4300,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3800,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 4300,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3200,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 3500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 3900,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 4500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 7000,
+      "processor_tier": 0,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 4500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 1024,
+      "camera_mp": 108,
+      "battery_mah": 3600,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 4400,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 4700,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 4000,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 16,
+      "storage_gb": 1024,
+      "camera_mp": 108,
+      "battery_mah": 4800,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 4900,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 16,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 5400,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 4800,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 5400,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 6330,
+      "processor_tier": 0,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 5500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 1024,
+      "camera_mp": 200,
+      "battery_mah": 4500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 4100,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 5400,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 6100,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 5500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 200,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 5600,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 5200,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 16,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 6500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 16,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 6800,
+      "processor_tier": 0,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "camera_mp": 108,
+      "battery_mah": 5500,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "camera_mp": 108,
+      "battery_mah": 5700,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 16,
+      "storage_gb": 512,
+      "camera_mp": 200,
+      "battery_mah": 4400,
+      "processor_tier": 0,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 512,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 1,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 3
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 256,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 1,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 512,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 24,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 1,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 8,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 2
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 1,
+      "tier_label": 0
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 12,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 16,
+      "camera_mp": 50,
+      "battery_mah": 5000,
+      "processor_tier": 2,
+      "tier_label": 1
+    },
+    {
+      "ram_gb": 6,
+      "storage_gb": 8,
+      "camera_mp": 13,
+      "battery_mah": 5000,
+      "processor_tier": 0,
+      "tier_label": 0
+    }
   ]
 }

@@ -1,85 +1,102 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE =
+  window.MOBOT_API_BASE ||
+  (window.location.hostname ? `${window.location.protocol}//${window.location.hostname}:8000` : "http://127.0.0.1:8000");
 
-const chatThread = document.getElementById("chatThread");
-const chatForm = document.getElementById("chatForm");
-const messageInput = document.getElementById("messageInput");
+const searchForm = document.getElementById("searchForm");
+const queryInput = document.getElementById("queryInput");
 const chips = document.getElementById("chips");
 const cardTemplate = document.getElementById("phoneCardTemplate");
+const knnCheckButton = document.getElementById("knnCheckButton");
+const resultMeta = document.getElementById("resultMeta");
+const resultsGrid = document.getElementById("resultsGrid");
+const diagPanel = document.getElementById("diagPanel");
 
-function autoResize() {
-  messageInput.style.height = "auto";
-  messageInput.style.height = `${Math.min(messageInput.scrollHeight, 132)}px`;
-}
-
-function appendBubble(text, role = "bot") {
-  const bubble = document.createElement("article");
-  bubble.className = `bubble ${role}`;
-
-  const p = document.createElement("p");
-  p.textContent = text;
-  bubble.appendChild(p);
-
-  chatThread.appendChild(bubble);
-  chatThread.scrollTop = chatThread.scrollHeight;
-  return bubble;
-}
-
-function addTypingIndicator() {
-  const bubble = document.createElement("article");
-  bubble.className = "bubble bot";
-  bubble.innerHTML = '<span class="typing"><i></i><i></i><i></i></span>';
-  chatThread.appendChild(bubble);
-  chatThread.scrollTop = chatThread.scrollHeight;
-  return bubble;
-}
-
-function renderResult(data) {
-  const bubble = document.createElement("article");
-  bubble.className = "bubble bot";
-
-  const lead = document.createElement("p");
-  lead.textContent = data.reply;
-  bubble.appendChild(lead);
-
-  const head = document.createElement("div");
-  head.className = "result-head";
-  head.innerHTML = `
-    <span class="badge">${data.tier}</span>
-    <span>confidence: ${Math.round(data.confidence * 100)}%</span>
-    <span>nlp: ${data.nlp_source}</span>
+function renderMeta(data) {
+  resultMeta.innerHTML = `
+    <p class="summary">${data.summary}</p>
+    <p class="subsummary">Tier used: <strong>${data.tier_used}</strong> · NLP: <strong>${data.nlp_source}</strong> · Results: <strong>${data.total_results}</strong></p>
   `;
-  bubble.appendChild(head);
+}
 
-  const list = document.createElement("ul");
-  list.className = "phone-list";
+function dealClass(badge) {
+  if (badge === "Great Deal") return "is-great";
+  if (badge === "Overpriced") return "is-over";
+  return "is-fair";
+}
 
-  for (const phone of data.phones) {
+function renderResults(data) {
+  resultsGrid.innerHTML = "";
+
+  if (!Array.isArray(data.results) || data.results.length === 0) {
+    resultsGrid.innerHTML = '<p class="empty-state">No matching phones found. Try widening budget or changing brand constraints.</p>';
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  for (const phone of data.results) {
     const node = cardTemplate.content.cloneNode(true);
     node.querySelector(".phone-name").textContent = phone.name;
     node.querySelector(".phone-specs").textContent = phone.specs;
-    node.querySelector(".price").textContent = `Rs. ${phone.price_pkr.toLocaleString()}`;
+    node.querySelector(".price").textContent = `Rs. ${Number(phone.price_pkr).toLocaleString()}`;
+
+    const tier = node.querySelector(".tier-pill");
+    tier.textContent = `${phone.actual_tier} price`;
+
+    const deal = node.querySelector(".deal-pill");
+    deal.textContent = phone.deal_badge;
+    deal.classList.add(dealClass(phone.deal_badge));
 
     const link = node.querySelector(".source-link");
     link.textContent = phone.source;
     link.href = phone.url;
 
-    list.appendChild(node);
+    fragment.appendChild(node);
   }
 
-  bubble.appendChild(list);
-  chatThread.appendChild(bubble);
-  chatThread.scrollTop = chatThread.scrollHeight;
+  resultsGrid.appendChild(fragment);
 }
 
-async function sendMessage(text) {
-  appendBubble(text, "user");
-  const typingNode = addTypingIndicator();
+function renderKnnDiagnostics(data) {
+  diagPanel.innerHTML = `
+    <div class="diag-box">
+      <p class="diag-status">${data.all_passed ? "k-NN diagnostic check passed." : "k-NN diagnostic check found mismatches."}</p>
+    <p class="diag-title">k-NN diagnostics</p>
+    <p class="diag-item">samples: ${data.dataset_samples} · k: ${data.k} · checks passed: ${data.pass_count}/${data.total_checks}</p>
+    <p class="diag-item">class mix: Budget ${data.class_distribution.Budget}, Mid-Range ${data.class_distribution["Mid-Range"]}, High-End ${data.class_distribution["High-End"]}, Premium ${data.class_distribution.Premium}</p>
+    </div>
+  `;
+
+  const box = diagPanel.querySelector(".diag-box");
+  if (!box) return;
+  if (Array.isArray(data.checks)) {
+    for (const check of data.checks) {
+      const item = document.createElement("p");
+      item.className = "diag-item";
+      const marker = check.passed ? "PASS" : "FAIL";
+      item.textContent = `${marker}: ${check.name} -> expected ${check.expected}, predicted ${check.predicted} (${Math.round((check.confidence || 0) * 100)}%)`;
+      box.appendChild(item);
+    }
+  }
+}
+
+function setSearchingState(isSearching) {
+  const button = searchForm.querySelector('button[type="submit"]');
+  button.disabled = isSearching;
+  button.textContent = isSearching ? "Searching..." : "Search";
+}
+
+async function runSearch(query) {
+  setSearchingState(true);
+  resultMeta.innerHTML = '<p class="summary">Searching...</p>';
+  resultsGrid.innerHTML = "";
+  diagPanel.innerHTML = "";
 
   try {
-    const response = await fetch(`${API_BASE}/chat`, {
+    const response = await fetch(`${API_BASE}/search`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text, history: [] }),
+      body: JSON.stringify({ query }),
     });
 
     if (!response.ok) {
@@ -87,44 +104,46 @@ async function sendMessage(text) {
     }
 
     const data = await response.json();
-    typingNode.remove();
-
-    if (Array.isArray(data.phones) && data.phones.length > 0) {
-      renderResult(data);
-    } else {
-      appendBubble(data.reply || "No matching phones found.", "bot");
-    }
+    renderMeta(data);
+    renderResults(data);
   } catch (error) {
-    typingNode.remove();
-    appendBubble("Server is unavailable. Start backend on http://localhost:8000.", "bot");
+    resultMeta.innerHTML = '<p class="summary">Server is unavailable. Start backend on http://localhost:8000.</p>';
+    console.error(error);
+  } finally {
+    setSearchingState(false);
+  }
+}
+
+async function runKnnDiagnostics() {
+  diagPanel.innerHTML = '<div class="diag-box"><p class="diag-status">Running k-NN diagnostics...</p></div>';
+  try {
+    const response = await fetch(`${API_BASE}/knn/diagnostics`);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    const data = await response.json();
+    renderKnnDiagnostics(data);
+  } catch (error) {
+    diagPanel.innerHTML = '<div class="diag-box"><p class="diag-status">Unable to run k-NN diagnostics right now.</p></div>';
     console.error(error);
   }
 }
 
-chatForm.addEventListener("submit", async (event) => {
+searchForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const text = messageInput.value.trim();
-  if (!text) return;
-
-  messageInput.value = "";
-  autoResize();
-  await sendMessage(text);
+  const query = queryInput.value.trim();
+  if (!query) return;
+  await runSearch(query);
 });
 
-messageInput.addEventListener("input", autoResize);
-messageInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter" && !event.shiftKey) {
-    event.preventDefault();
-    chatForm.requestSubmit();
-  }
-});
+knnCheckButton.addEventListener("click", runKnnDiagnostics);
 
 chips.addEventListener("click", (event) => {
   if (!(event.target instanceof HTMLButtonElement)) return;
   const text = event.target.textContent?.trim();
   if (!text) return;
-
-  messageInput.value = text;
-  autoResize();
-  chatForm.requestSubmit();
+  queryInput.value = text;
+  searchForm.requestSubmit();
 });
+
+queryInput.focus();

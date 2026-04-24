@@ -1,0 +1,326 @@
+model_name,brand,ram_gb,storage_gb,battery_mah,camera_mp,screen_size_in,processor,processor_tier,price_pkr,source,scraped_at
+Itel A22,Itel,2,32,3800,8.0,6.1,Helio G36,1,5994,whatmobile,2026-04-20T12:56:40.172349
+Itel Vision 29,Itel,3,32,3200,13.0,6.2,Helio A22,1,5994,whatmobile,2026-04-20T12:56:40.173271
+Nokia 8,Nokia,4,64,3300,16.0,5.9,Unisoc T612,1,6993,megapk,2026-04-20T12:56:39.976291
+Itel Vision 11,Itel,2,64,3000,16.0,5.6,Helio G37,1,6993,whatmobile,2026-04-20T12:56:40.170900
+Itel P21,Itel,3,32,3400,16.0,6.0,Helio G37,1,6993,hamariweb,2026-04-20T12:56:40.170041
+Itel P23,Itel,4,64,2900,8.0,6.0,Unisoc T606,1,6993,hamariweb,2026-04-20T12:56:40.170482
+Tecno Phantom 16,Tecno,4,64,3600,16.0,6.0,Helio G36,1,9990,whatmobile,2026-04-20T12:56:39.972983
+Infinix Zero 22,Infinix,3,64,3500,13.0,5.5,Helio A22,1,9990,megapk,2026-04-20T12:56:39.863700
+Sparx Edge 6,Sparx,4,64,2700,8.0,6.3,Unisoc T612,1,10989,whatmobile,2026-04-20T12:56:40.162930
+Itel P5,Itel,2,32,3500,13.0,6.4,Unisoc T606,1,10989,whatmobile,2026-04-20T12:56:40.173856
+Infinix Hot 14,Infinix,2,64,3300,8.0,6.4,Helio A22,1,10989,whatmobile,2026-04-20T12:56:39.863209
+Itel Vision 26,Itel,4,64,3000,13.0,6.5,Unisoc T612,1,11988,whatmobile,2026-04-20T12:56:40.175191
+Tecno Camon 13,Tecno,3,64,2500,8.0,6.7,Unisoc T612,1,11988,hamariweb,2026-04-20T12:56:39.882057
+Nokia C14,Nokia,4,64,3500,16.0,6.6,Unisoc T606,1,11988,whatmobile,2026-04-20T12:56:39.979708
+Infinix Zero 27,Infinix,4,64,3800,16.0,6.5,Helio A22,1,12987,hamariweb,2026-04-20T12:56:39.850894
+Itel Vision 15,Itel,3,64,3400,8.0,6.3,Helio G36,1,12987,megapk,2026-04-20T12:56:40.174755
+Realme Note 28,Realme,3,32,2500,16.0,6.5,Unisoc T612,1,12987,megapk,2026-04-20T12:56:39.790211
+Nokia C16,Nokia,3,64,3300,13.0,6.3,Helio A22,1,12987,hamariweb,2026-04-20T12:56:39.975796
+Xiaomi Poco M7,Xiaomi,4,32,2500,16.0,6.4,Helio A22,1,12987,megapk,2026-04-20T12:56:39.492432
+Sparx Edge 27,Sparx,2,32,2500,8.0,6.5,Helio G37,1,13986,whatmobile,2026-04-20T12:56:40.168667
+Realme GT 20,Realme,3,32,2500,8.0,6.5,Helio G37,1,13986,whatmobile,2026-04-20T12:56:39.797676
+Xiaomi Poco M24,Xiaomi,3,64,3100,16.0,6.6,Helio G37,1,13986,whatmobile,2026-04-20T12:56:39.572645
+Infinix Hot 29,Infinix,2,32,3400,8.0,6.4,Helio G36,1,13986,megapk,2026-04-20T12:56:39.875733
+Oppo Reno 18,Oppo,3,64,3100,8.0,6.7,Unisoc T612,1,14985,whatmobile,2026-04-20T12:56:39.639357
+Xiaomi Redmi 24,Xiaomi,4,32,3500,8.0,6.4,Helio A22,1,14985,megapk,2026-04-20T12:56:39.549502
+Sparx Edge 5,Sparx,4,64,2700,13.0,6.7,Helio G36,1,14985,whatmobile,2026-04-20T12:56:40.169158
+Itel A9,Itel,4,64,3600,16.0,6.3,Helio A22,1,14985,whatmobile,2026-04-20T12:56:40.174301
+Xiaomi Redmi 15,Xiaomi,4,128,3600,48.0,6.6,Helio G99,2,15984,whatmobile,2026-04-20T12:56:39.563919
+Samsung Galaxy F16,Samsung,4,64,2800,48.0,6.6,Snapdragon 680,2,15984,hamariweb,2026-04-20T12:56:39.335987
+Honor X25,Honor,4,128,3200,13.0,6.3,Dimensity 6100,2,15984,megapk,2026-04-20T12:56:40.097136
+Oppo F20,Oppo,4,128,3200,13.0,6.6,Snapdragon 680,2,15984,megapk,2026-04-20T12:56:39.582304
+Itel P18,Itel,4,64,2500,13.0,6.5,Snapdragon 680,2,15984,megapk,2026-04-20T12:56:40.171830
+Samsung Galaxy S17,Samsung,6,128,3100,50.0,6.3,Helio G99,2,15984,whatmobile,2026-04-20T12:56:39.342181
+Realme C22,Realme,6,128,2700,48.0,6.3,Helio A22,1,15984,whatmobile,2026-04-20T12:56:39.837873
+Tecno Pop 28,Tecno,4,64,2700,48.0,6.5,Snapdragon 685,2,15984,hamariweb,2026-04-20T12:56:39.953747
+Infinix Hot 24,Infinix,4,128,3600,48.0,6.6,Snapdragon 685,2,15984,whatmobile,2026-04-20T12:56:39.860307
+Samsung Galaxy F17,Samsung,6,128,2800,13.0,6.3,Helio G36,1,15984,whatmobile,2026-04-20T12:56:39.343314
+Realme 9 Pro,Realme,6,64,2900,13.0,6.6,Snapdragon 680,2,16983,whatmobile,2026-04-20T12:56:39.796371
+Oppo Find X23,Oppo,3,128,2800,48.0,6.4,Dimensity 6100,2,16983,whatmobile,2026-04-20T12:56:39.656692
+Xiaomi Poco X13,Xiaomi,4,128,4100,48.0,6.2,Dimensity 6100,2,16983,whatmobile,2026-04-20T12:56:39.557350
+Honor 7 Lite,Honor,4,128,2700,13.0,6.5,Snapdragon 685,2,17982,whatmobile,2026-04-20T12:56:40.091683
+Vivo Y28,Vivo,4,128,2500,48.0,6.5,Helio G36,1,17982,whatmobile,2026-04-20T12:56:39.763422
+Infinix Smart 20,Infinix,6,64,3100,48.0,6.5,Snapdragon 680,2,17982,whatmobile,2026-04-20T12:56:39.867378
+Infinix Zero 20,Infinix,4,128,3100,50.0,6.5,Helio G99,2,17982,hamariweb,2026-04-20T12:56:39.847480
+Sparx Edge 11,Sparx,6,128,3700,48.0,6.4,Snapdragon 680,2,18981,hamariweb,2026-04-20T12:56:40.165454
+Tecno Pop 19,Tecno,3,128,2700,48.0,6.2,Helio G99,2,18981,whatmobile,2026-04-20T12:56:39.939984
+Realme 28 Pro,Realme,4,128,2700,13.0,6.3,Snapdragon 680,2,18981,hamariweb,2026-04-20T12:56:39.776916
+Oppo A17,Oppo,4,128,3600,48.0,6.5,Helio A22,1,18981,whatmobile,2026-04-20T12:56:39.653173
+Honor Magic 13,Honor,6,128,2700,48.0,6.5,Snapdragon 685,2,18981,hamariweb,2026-04-20T12:56:40.088507
+Samsung Galaxy F22,Samsung,4,128,2900,50.0,6.3,Helio G99,2,18981,whatmobile,2026-04-20T12:56:39.459627
+Xiaomi Redmi 19,Xiaomi,3,64,2600,48.0,6.3,Snapdragon 685,2,19980,whatmobile,2026-04-20T12:56:39.571408
+Honor Magic 26,Honor,4,128,2900,13.0,6.4,Helio G88,2,19980,whatmobile,2026-04-20T12:56:40.095600
+Infinix Smart 18,Infinix,4,128,3000,13.0,6.4,Snapdragon 680,2,19980,whatmobile,2026-04-20T12:56:39.843991
+Tecno Spark 19,Tecno,6,128,2500,48.0,6.4,Snapdragon 680,2,19980,hamariweb,2026-04-20T12:56:39.967217
+Tecno Camon 17,Tecno,3,128,3500,50.0,6.5,Snapdragon 685,2,19980,megapk,2026-04-20T12:56:39.974226
+Honor Magic 17,Honor,6,128,3000,48.0,6.6,Helio G37,1,19980,megapk,2026-04-20T12:56:40.094376
+Infinix Note 29,Infinix,3,128,2900,50.0,6.7,Unisoc T612,1,19980,whatmobile,2026-04-20T12:56:39.874112
+Infinix Smart 10,Infinix,6,128,3200,13.0,6.7,Helio G99,2,20979,whatmobile,2026-04-20T12:56:39.855851
+Xiaomi Redmi 5,Xiaomi,4,128,2900,50.0,6.4,Dimensity 6100,2,20979,hamariweb,2026-04-20T12:56:39.484942
+Huawei P10,Huawei,4,64,3100,13.0,6.5,Snapdragon 680,2,20979,megapk,2026-04-20T12:56:40.071815
+Samsung Galaxy S8,Samsung,6,128,3200,13.0,6.6,Snapdragon 685,2,20979,hamariweb,2026-04-20T12:56:39.326077
+Oppo Reno 25,Oppo,3,128,3500,48.0,6.4,Snapdragon 685,2,21978,megapk,2026-04-20T12:56:39.638227
+Xiaomi Redmi Note 29,Xiaomi,3,64,2500,48.0,6.4,Dimensity 6100,2,21978,megapk,2026-04-20T12:56:39.569731
+Vivo V28,Vivo,6,64,4100,50.0,6.2,Dimensity 6100,2,21978,whatmobile,2026-04-20T12:56:39.676638
+Sparx Neo 6,Sparx,4,128,3700,48.0,6.4,Snapdragon 680,2,21978,whatmobile,2026-04-20T12:56:40.167031
+Oppo Reno 15,Oppo,4,128,4100,48.0,6.7,Dimensity 6100,2,21978,hamariweb,2026-04-20T12:56:39.646761
+Infinix Zero 29,Infinix,4,128,3300,50.0,6.5,Snapdragon 680,2,22977,whatmobile,2026-04-20T12:56:39.850401
+Xiaomi Poco X9,Xiaomi,6,64,2900,50.0,6.5,Snapdragon 685,2,22977,megapk,2026-04-20T12:56:39.576596
+Oppo Find X6,Oppo,4,64,3100,50.0,6.4,Unisoc T612,1,22977,hamariweb,2026-04-20T12:56:39.657806
+Huawei Y11,Huawei,4,64,3200,50.0,6.5,Helio G99,2,22977,whatmobile,2026-04-20T12:56:40.068752
+Nokia G21,Nokia,4,128,3300,48.0,6.7,Helio G99,2,22977,whatmobile,2026-04-20T12:56:39.983975
+Oppo A6,Oppo,6,128,3200,13.0,6.2,Helio G37,1,22977,whatmobile,2026-04-20T12:56:39.646203
+Vivo Y13,Vivo,6,128,2600,48.0,6.4,Snapdragon 680,2,22977,hamariweb,2026-04-20T12:56:39.760932
+Nokia X12,Nokia,3,128,3300,48.0,6.5,Helio G99,2,22977,whatmobile,2026-04-20T12:56:39.986615
+Samsung Galaxy M9,Samsung,6,128,3200,50.0,6.5,Dimensity 6100,2,22977,megapk,2026-04-20T12:56:39.477789
+Xiaomi Redmi Note 23,Xiaomi,6,128,2900,48.0,6.4,Snapdragon 685,2,22977,hamariweb,2026-04-20T12:56:39.575443
+Tecno Camon 15,Tecno,4,64,3500,48.0,6.3,Helio G36,1,23976,hamariweb,2026-04-20T12:56:39.967838
+Sparx S8,Sparx,4,128,3100,50.0,6.6,Dimensity 6100,2,23976,whatmobile,2026-04-20T12:56:40.163480
+Oppo Reno 21,Oppo,4,128,3100,48.0,6.4,Snapdragon 685,2,23976,megapk,2026-04-20T12:56:39.639927
+Honor Magic 15,Honor,4,128,2500,48.0,6.4,Helio G88,2,23976,whatmobile,2026-04-20T12:56:40.098068
+Samsung Galaxy A29,Samsung,4,128,2500,50.0,6.4,Helio G99,2,24975,hamariweb,2026-04-20T12:56:39.446126
+Sparx Edge 17,Sparx,6,128,3200,48.0,6.6,Dimensity 6100,2,24975,hamariweb,2026-04-20T12:56:40.161865
+Oppo Find X10,Oppo,4,128,3100,13.0,6.6,Helio A22,1,24975,hamariweb,2026-04-20T12:56:39.643973
+Oppo Find X9,Oppo,6,128,3100,48.0,6.7,Helio G99,2,24975,megapk,2026-04-20T12:56:39.643366
+Sparx Edge 21,Sparx,4,128,3600,50.0,6.4,Unisoc T612,1,24975,whatmobile,2026-04-20T12:56:40.164828
+Sparx S20,Sparx,4,64,3000,13.0,6.4,Snapdragon 680,2,25974,whatmobile,2026-04-20T12:56:40.168219
+Oppo A22,Oppo,6,128,2500,48.0,6.6,Snapdragon 685,2,25974,hamariweb,2026-04-20T12:56:39.641693
+Infinix Note 8,Infinix,3,128,2900,48.0,6.4,Helio G88,2,25974,whatmobile,2026-04-20T12:56:39.859135
+Infinix Smart 25,Infinix,3,64,3000,13.0,6.2,Unisoc T606,1,25974,megapk,2026-04-20T12:56:39.869221
+Xiaomi Poco M9,Xiaomi,6,64,3000,13.0,6.2,Helio G88,2,25974,hamariweb,2026-04-20T12:56:39.578333
+Nokia X10,Nokia,4,64,3700,48.0,6.4,Snapdragon 680,2,25974,hamariweb,2026-04-20T12:56:39.977390
+Xiaomi Redmi Note 26,Xiaomi,4,128,3600,48.0,6.2,Helio G88,2,26973,whatmobile,2026-04-20T12:56:39.574876
+Realme C8,Realme,6,128,3700,13.0,6.6,Snapdragon 685,2,26973,hamariweb,2026-04-20T12:56:39.833996
+Samsung Galaxy S11,Samsung,4,128,3500,50.0,6.6,Helio G37,1,26973,megapk,2026-04-20T12:56:39.423162
+Oppo Reno 29,Oppo,3,128,3400,48.0,6.7,Snapdragon 680,2,26973,whatmobile,2026-04-20T12:56:39.648042
+Xiaomi Poco M21,Xiaomi,3,128,3300,13.0,6.4,Helio A22,1,26973,whatmobile,2026-04-20T12:56:39.484360
+Xiaomi Poco M13,Xiaomi,4,128,2500,13.0,6.3,Snapdragon 685,2,26973,whatmobile,2026-04-20T12:56:39.577743
+Tecno Phantom 24,Tecno,3,128,3100,50.0,6.3,Helio G37,1,26973,hamariweb,2026-04-20T12:56:39.885437
+Infinix Zero 25,Infinix,4,64,3500,48.0,6.6,Snapdragon 680,2,27972,whatmobile,2026-04-20T12:56:39.862675
+Tecno Camon 23,Tecno,6,128,3200,50.0,6.6,Helio G36,1,27972,megapk,2026-04-20T12:56:39.960998
+Infinix Note 7,Infinix,6,64,3400,50.0,6.4,Helio G88,2,27972,whatmobile,2026-04-20T12:56:39.859723
+Samsung Galaxy A24,Samsung,4,128,3400,50.0,6.5,Helio G37,1,27972,hamariweb,2026-04-20T12:56:39.344919
+Samsung Galaxy M7,Samsung,4,128,2600,13.0,6.6,Helio G36,1,27972,hamariweb,2026-04-20T12:56:39.457256
+Tecno Spark 22,Tecno,3,128,3700,13.0,6.2,Dimensity 6100,2,27972,hamariweb,2026-04-20T12:56:39.934756
+Sparx S26,Sparx,4,128,2700,50.0,6.4,Snapdragon 685,2,27972,hamariweb,2026-04-20T12:56:40.164056
+Xiaomi Poco X28,Xiaomi,3,128,3500,48.0,6.4,Snapdragon 685,2,27972,hamariweb,2026-04-20T12:56:39.558592
+Realme Note 27,Realme,4,128,2600,50.0,6.6,Helio G99,2,27972,hamariweb,2026-04-20T12:56:39.836984
+Realme C11,Realme,4,64,3200,50.0,6.4,Unisoc T612,1,27972,whatmobile,2026-04-20T12:56:39.832723
+Oppo F7,Oppo,3,64,3300,50.0,6.4,Helio G88,2,27972,hamariweb,2026-04-20T12:56:39.642242
+Tecno Spark 28,Tecno,4,128,2700,50.0,6.4,Snapdragon 685,2,28971,hamariweb,2026-04-20T12:56:39.975307
+Honor X15,Honor,4,128,3600,48.0,6.5,Unisoc T606,1,28971,megapk,2026-04-20T12:56:40.093772
+Vivo X9,Vivo,4,64,2600,13.0,6.2,Snapdragon 680,2,28971,hamariweb,2026-04-20T12:56:39.742718
+Xiaomi Redmi 26,Xiaomi,4,128,3800,50.0,6.4,Unisoc T612,1,28971,whatmobile,2026-04-20T12:56:39.575994
+Realme 19 Pro,Realme,6,64,3000,50.0,6.6,Helio G88,2,28971,whatmobile,2026-04-20T12:56:39.771815
+Nokia C21,Nokia,4,64,3300,48.0,6.3,Snapdragon 685,2,28971,megapk,2026-04-20T12:56:39.985215
+Samsung Galaxy A8,Samsung,6,128,3800,48.0,6.5,Helio G88,2,29970,whatmobile,2026-04-20T12:56:39.447370
+Nokia 26,Nokia,3,64,3700,50.0,6.4,Snapdragon 680,2,29970,whatmobile,2026-04-20T12:56:39.978507
+Realme Note 21,Realme,6,128,2500,13.0,6.4,Dimensity 6100,2,29970,hamariweb,2026-04-20T12:56:39.779729
+Infinix Smart 23,Infinix,6,128,2500,50.0,6.6,Snapdragon 680,2,29970,whatmobile,2026-04-20T12:56:39.873540
+Tecno Pop 11,Tecno,3,128,3200,13.0,6.5,Helio G36,1,29970,whatmobile,2026-04-20T12:56:39.878556
+Tecno Pop 24,Tecno,4,128,2900,48.0,6.2,Dimensity 6100,2,29970,whatmobile,2026-04-20T12:56:39.974770
+Nokia C25,Nokia,4,128,3100,48.0,6.5,Snapdragon 685,2,29970,megapk,2026-04-20T12:56:39.977936
+Tecno Pop 5,Tecno,4,128,3300,48.0,6.3,Snapdragon 680,2,29970,megapk,2026-04-20T12:56:39.935933
+Nokia G16,Nokia,4,128,2800,48.0,6.3,Snapdragon 685,2,29970,hamariweb,2026-04-20T12:56:39.976849
+Sparx S15,Sparx,6,128,2800,13.0,6.3,Unisoc T606,1,30969,hamariweb,2026-04-20T12:56:40.167668
+Oppo Find X15,Oppo,8,128,3400,50.0,6.6,Helio G99,2,30969,whatmobile,2026-04-20T12:56:39.659541
+Realme GT 9,Realme,6,256,2800,48.0,6.6,Helio G88,2,30969,whatmobile,2026-04-20T12:56:39.790794
+Xiaomi Poco X19,Xiaomi,4,128,3000,13.0,6.5,Helio G99,2,30969,megapk,2026-04-20T12:56:39.550111
+Samsung Galaxy A10,Samsung,6,128,2500,50.0,6.5,Unisoc T612,1,30969,megapk,2026-04-20T12:56:39.443822
+Xiaomi Poco M19,Xiaomi,8,128,2900,13.0,6.6,Dimensity 6100,2,30969,whatmobile,2026-04-20T12:56:39.479634
+Oppo A20,Oppo,8,128,2800,48.0,6.2,Helio G99,2,31968,hamariweb,2026-04-20T12:56:39.645089
+Realme C28,Realme,6,128,2800,48.0,6.6,Dimensity 6100,2,31968,hamariweb,2026-04-20T12:56:39.841795
+Sparx Edge 20,Sparx,6,128,2800,50.0,6.3,Helio G37,1,31968,whatmobile,2026-04-20T12:56:40.162439
+Xiaomi Poco M26,Xiaomi,6,256,3100,48.0,6.3,Helio A22,1,32967,whatmobile,2026-04-20T12:56:39.487615
+Realme Note 12,Realme,8,256,3600,48.0,6.6,Snapdragon 685,2,32967,megapk,2026-04-20T12:56:39.770373
+Oppo Find X25,Oppo,4,256,3000,50.0,6.6,Snapdragon 685,2,32967,whatmobile,2026-04-20T12:56:39.649446
+Oppo F23,Oppo,6,128,2600,48.0,6.4,Snapdragon 680,2,32967,whatmobile,2026-04-20T12:56:39.651391
+Huawei Nova 25,Huawei,6,128,3600,48.0,6.2,Snapdragon 685,2,33966,whatmobile,2026-04-20T12:56:40.083651
+Realme C6,Realme,8,256,4200,13.0,6.3,Dimensity 6100,2,33966,whatmobile,2026-04-20T12:56:39.789697
+Oppo A5,Oppo,6,256,2700,50.0,6.5,Helio G88,2,34965,whatmobile,2026-04-20T12:56:39.635961
+Oppo A26,Oppo,8,256,3000,50.0,6.4,Helio G88,2,34965,megapk,2026-04-20T12:56:39.652606
+Xiaomi Redmi Note 6,Xiaomi,6,256,3300,48.0,6.3,Helio G88,2,34965,hamariweb,2026-04-20T12:56:39.569152
+Oppo A21,Oppo,8,256,3200,50.0,6.4,Snapdragon 680,2,34965,hamariweb,2026-04-20T12:56:39.654292
+Vivo T9,Vivo,8,128,2600,50.0,6.7,Unisoc T612,1,34965,hamariweb,2026-04-20T12:56:39.724349
+Tecno Spark 29,Tecno,6,256,2700,13.0,6.3,Helio G37,1,35964,whatmobile,2026-04-20T12:56:39.877981
+Tecno Spark 24,Tecno,6,128,3700,13.0,6.3,Snapdragon 680,2,36963,hamariweb,2026-04-20T12:56:39.877404
+Vivo Y16,Vivo,6,256,2900,50.0,6.4,Snapdragon 680,2,36963,whatmobile,2026-04-20T12:56:39.755360
+Xiaomi Poco M5,Xiaomi,6,128,3200,50.0,6.6,Snapdragon 685,2,36963,hamariweb,2026-04-20T12:56:39.570460
+Samsung Galaxy F18,Samsung,6,128,3100,50.0,6.7,Helio A22,1,37962,whatmobile,2026-04-20T12:56:39.345552
+Infinix Smart 9,Infinix,4,128,2500,13.0,6.6,Helio A22,1,37962,hamariweb,2026-04-20T12:56:39.860897
+Realme 15 Pro,Realme,4,128,3400,50.0,6.5,Snapdragon 685,2,37962,hamariweb,2026-04-20T12:56:39.772470
+Realme Note 5,Realme,8,128,3600,48.0,6.6,Dimensity 6100,2,37962,whatmobile,2026-04-20T12:56:39.839049
+Samsung Galaxy A11,Samsung,8,256,2700,13.0,6.6,Helio G36,1,38961,whatmobile,2026-04-20T12:56:39.452958
+Xiaomi Poco M6,Xiaomi,6,128,3000,13.0,6.3,Unisoc T612,1,38961,hamariweb,2026-04-20T12:56:39.544330
+Infinix Note 25,Infinix,6,128,2800,48.0,6.7,Helio G88,2,38961,whatmobile,2026-04-20T12:56:39.864214
+Samsung Galaxy M8,Samsung,4,128,3400,50.0,6.2,Snapdragon 680,2,38961,hamariweb,2026-04-20T12:56:39.346186
+Oppo A11,Oppo,6,128,3300,50.0,6.5,Snapdragon 680,2,38961,whatmobile,2026-04-20T12:56:39.652026
+Vivo T10,Vivo,4,256,2900,64.0,6.6,Dimensity 6100,2,40959,megapk,2026-04-20T12:56:39.723477
+Samsung Galaxy S6,Samsung,6,256,3300,108.0,6.7,Snapdragon 680,2,40959,whatmobile,2026-04-20T12:56:39.436903
+Realme GT 6,Realme,4,128,3400,64.0,6.7,Dimensity 8200,3,40959,whatmobile,2026-04-20T12:56:39.776314
+Realme C14,Realme,4,128,3200,50.0,6.6,Helio G88,2,40959,megapk,2026-04-20T12:56:39.788401
+Samsung Galaxy A9,Samsung,8,128,3300,108.0,6.8,Snapdragon 680,2,42957,hamariweb,2026-04-20T12:56:39.462189
+Huawei Mate 29,Huawei,8,128,2500,108.0,6.5,Snapdragon 7 Gen 1,3,43956,hamariweb,2026-04-20T12:56:40.073118
+Samsung Galaxy S18,Samsung,6,128,3400,50.0,6.7,Snapdragon 778G,3,43956,whatmobile,2026-04-20T12:56:39.451716
+Oppo Find X22,Oppo,6,128,2500,64.0,6.6,Helio G99,2,43956,whatmobile,2026-04-20T12:56:39.580956
+Xiaomi Redmi Note 13,Xiaomi,8,256,3200,108.0,6.6,Dimensity 8200,3,43956,whatmobile,2026-04-20T12:56:39.546819
+Oppo A10,Oppo,6,256,3600,64.0,6.6,Dimensity 8200,3,43956,whatmobile,2026-04-20T12:56:39.650860
+Oppo A8,Oppo,8,256,2800,64.0,6.7,Dimensity 7300,3,43956,megapk,2026-04-20T12:56:39.653727
+Tecno Pop 20,Tecno,6,256,3200,50.0,6.7,Dimensity 7300,3,43956,whatmobile,2026-04-20T12:56:39.973638
+Infinix Smart 27,Infinix,6,256,3200,108.0,6.8,Dimensity 8200,3,44955,whatmobile,2026-04-20T12:56:39.861474
+Realme C15,Realme,8,256,3700,64.0,6.7,Snapdragon 7 Gen 1,3,44955,hamariweb,2026-04-20T12:56:39.791355
+Vivo Y18,Vivo,8,128,2900,108.0,6.5,Snapdragon 778G,3,44955,hamariweb,2026-04-20T12:56:39.663396
+Nokia C12,Nokia,6,128,2800,108.0,6.9,Helio G88,2,45954,hamariweb,2026-04-20T12:56:39.979083
+Tecno Spark 11,Tecno,4,256,3600,50.0,6.6,Snapdragon 685,2,45954,whatmobile,2026-04-20T12:56:39.970739
+Xiaomi Poco X14,Xiaomi,6,256,3400,64.0,6.9,Snapdragon 778G,3,45954,megapk,2026-04-20T12:56:39.491891
+Samsung Galaxy M20,Samsung,8,128,3400,50.0,6.6,Dimensity 8200,3,45954,megapk,2026-04-20T12:56:39.335315
+Samsung Galaxy F8,Samsung,4,128,3300,64.0,6.7,Dimensity 7300,3,47952,whatmobile,2026-04-20T12:56:39.418375
+Vivo V8,Vivo,8,128,3000,64.0,6.7,Snapdragon 778G,3,47952,whatmobile,2026-04-20T12:56:39.681870
+Vivo V23,Vivo,4,256,3100,108.0,6.6,Snapdragon 685,2,48951,hamariweb,2026-04-20T12:56:39.753464
+Samsung Galaxy M14,Samsung,6,128,2700,50.0,6.7,Snapdragon 7 Gen 1,3,49950,whatmobile,2026-04-20T12:56:39.329997
+Samsung Galaxy F10,Samsung,6,128,3300,108.0,6.9,Snapdragon 778G,3,49950,hamariweb,2026-04-20T12:56:39.437521
+Tecno Phantom 14,Tecno,4,256,3400,108.0,6.9,Dimensity 8200,3,49950,hamariweb,2026-04-20T12:56:39.935366
+Tecno Spark 15,Tecno,8,256,3500,108.0,6.8,Snapdragon 7 Gen 1,3,49950,hamariweb,2026-04-20T12:56:39.972223
+OnePlus 11 Pro,OnePlus,8,128,3200,64.0,6.6,Snapdragon 7 Gen 1,3,50949,whatmobile,2026-04-20T12:56:40.101350
+Realme GT 23,Realme,6,128,3300,64.0,6.8,Dimensity 8200,3,51948,hamariweb,2026-04-20T12:56:39.792579
+Vivo V21,Vivo,6,128,2900,50.0,6.5,Snapdragon 7 Gen 1,3,52947,megapk,2026-04-20T12:56:39.681260
+Tecno Phantom 22,Tecno,6,256,3600,64.0,6.7,Snapdragon 7 Gen 1,3,53946,megapk,2026-04-20T12:56:39.936497
+Infinix Zero 17,Infinix,4,128,3400,64.0,6.7,Dimensity 6100,2,55944,whatmobile,2026-04-20T12:56:39.843143
+Infinix Note 21,Infinix,6,256,3700,64.0,6.7,Helio G99,2,55944,whatmobile,2026-04-20T12:56:39.872896
+Infinix Note 12,Infinix,4,128,2600,64.0,6.6,Snapdragon 778G,3,56943,whatmobile,2026-04-20T12:56:39.868022
+Vivo X16,Vivo,6,256,3400,50.0,6.9,Dimensity 7300,3,56943,hamariweb,2026-04-20T12:56:39.660102
+Infinix Zero 15,Infinix,6,128,3900,108.0,6.8,Helio G99,2,56943,megapk,2026-04-20T12:56:39.852018
+Nokia 16,Nokia,8,256,2500,50.0,6.8,Dimensity 6100,2,57942,hamariweb,2026-04-20T12:56:39.984556
+Oppo Reno 27,Oppo,6,128,3000,50.0,6.7,Dimensity 6100,2,57942,whatmobile,2026-04-20T12:56:39.644546
+Honor Play 27,Honor,4,256,3300,50.0,6.7,Helio G99,2,58941,whatmobile,2026-04-20T12:56:40.089510
+OnePlus 10,OnePlus,4,128,3300,108.0,6.9,Snapdragon 7 Gen 1,3,58941,megapk,2026-04-20T12:56:40.112564
+Samsung Galaxy F5,Samsung,8,256,3100,50.0,6.7,Snapdragon 7 Gen 1,3,59940,whatmobile,2026-04-20T12:56:39.340507
+Xiaomi Redmi Note 5,Xiaomi,8,128,3100,108.0,6.5,Snapdragon 685,2,59940,whatmobile,2026-04-20T12:56:39.579635
+Tecno Phantom 17,Tecno,6,256,3500,64.0,6.8,Snapdragon 685,2,59940,megapk,2026-04-20T12:56:39.968971
+Samsung Galaxy A7,Samsung,6,256,3700,64.0,6.7,Dimensity 6100,2,59940,whatmobile,2026-04-20T12:56:39.327747
+Tecno Pop 23,Tecno,8,256,3100,64.0,6.7,Snapdragon 7 Gen 1,3,59940,megapk,2026-04-20T12:56:39.884063
+Huawei P7,Huawei,6,128,3400,50.0,6.8,Helio G88,2,60939,whatmobile,2026-04-20T12:56:40.072524
+Honor Magic 27,Honor,8,256,3000,64.0,6.6,Helio G88,2,60939,whatmobile,2026-04-20T12:56:40.095005
+Xiaomi Poco M23,Xiaomi,8,128,3600,108.0,6.8,Snapdragon 685,2,61938,whatmobile,2026-04-20T12:56:39.547386
+Nokia 23,Nokia,8,256,3800,108.0,6.7,Snapdragon 7 Gen 1,3,62937,whatmobile,2026-04-20T12:56:39.980845
+Nokia X25,Nokia,8,256,3300,64.0,6.7,Snapdragon 778G,3,62937,megapk,2026-04-20T12:56:39.988810
+Vivo X7,Vivo,12,128,3200,50.0,6.8,Dimensity 7300,3,62937,whatmobile,2026-04-20T12:56:39.743305
+Tecno Camon 19,Tecno,8,128,3700,50.0,6.6,Dimensity 6100,2,63936,hamariweb,2026-04-20T12:56:39.968399
+Xiaomi Poco X11,Xiaomi,8,128,2500,64.0,6.6,Helio G88,2,63936,hamariweb,2026-04-20T12:56:39.485512
+Infinix Hot 5,Infinix,6,128,3300,108.0,6.8,Helio G88,2,63936,hamariweb,2026-04-20T12:56:39.849917
+Infinix Zero 5,Infinix,6,256,3400,108.0,6.8,Helio G99,2,63936,whatmobile,2026-04-20T12:56:39.857970
+Infinix Smart 14,Infinix,12,256,3600,64.0,6.8,Snapdragon 778G,3,63936,megapk,2026-04-20T12:56:39.858557
+Infinix Smart 11,Infinix,8,128,3900,64.0,6.8,Snapdragon 685,2,64935,whatmobile,2026-04-20T12:56:39.851443
+Realme 16 Pro,Realme,8,256,3000,108.0,6.7,Dimensity 7300,3,65934,megapk,2026-04-20T12:56:39.777476
+Oppo Find X27,Oppo,6,128,3500,64.0,6.5,Dimensity 8200,3,65934,megapk,2026-04-20T12:56:39.658961
+Oppo Find X11,Oppo,8,128,4300,64.0,6.7,Dimensity 7300,3,66933,whatmobile,2026-04-20T12:56:39.647315
+Vivo X18,Vivo,8,256,4000,108.0,6.5,Helio G99,2,66933,whatmobile,2026-04-20T12:56:39.729055
+Xiaomi Poco X23,Xiaomi,8,128,2800,64.0,6.8,Snapdragon 7 Gen 1,3,67932,whatmobile,2026-04-20T12:56:39.574293
+Vivo Y29,Vivo,6,256,3200,50.0,6.8,Snapdragon 685,2,69930,hamariweb,2026-04-20T12:56:39.662266
+Xiaomi Poco X25,Xiaomi,12,256,3900,50.0,6.8,Snapdragon 680,2,69930,whatmobile,2026-04-20T12:56:39.548924
+Huawei Y19,Huawei,12,256,3500,108.0,6.6,Snapdragon 7 Gen 1,3,70929,whatmobile,2026-04-20T12:56:40.070899
+Xiaomi Redmi 6,Xiaomi,12,128,3300,64.0,6.9,Dimensity 7300,3,70929,whatmobile,2026-04-20T12:56:39.550693
+Realme Note 19,Realme,8,256,2800,50.0,6.6,Helio G88,2,70929,hamariweb,2026-04-20T12:56:39.795056
+Huawei Y8,Huawei,8,128,3500,50.0,6.6,Snapdragon 680,2,71928,whatmobile,2026-04-20T12:56:40.085177
+Vivo Y9,Vivo,8,128,3100,64.0,6.8,Dimensity 7300,3,71928,whatmobile,2026-04-20T12:56:39.660854
+Vivo X6,Vivo,8,256,3400,50.0,6.7,Dimensity 8200,3,72927,whatmobile,2026-04-20T12:56:39.761942
+Tecno Phantom 21,Tecno,8,128,4100,64.0,6.6,Snapdragon 778G,3,72927,megapk,2026-04-20T12:56:39.885964
+Realme C27,Realme,8,256,3400,50.0,6.9,Snapdragon 7 Gen 1,3,73926,whatmobile,2026-04-20T12:56:39.839627
+Xiaomi Redmi Note 20,Xiaomi,6,128,4000,50.0,6.8,Snapdragon 7 Gen 1,3,74925,whatmobile,2026-04-20T12:56:39.552672
+Xiaomi Poco M15,Xiaomi,6,256,3600,108.0,6.5,Dimensity 8200,3,75924,whatmobile,2026-04-20T12:56:39.560778
+Oppo Find X17,Oppo,8,128,3600,64.0,6.6,Snapdragon 7 Gen 1,3,76923,hamariweb,2026-04-20T12:56:39.634295
+Xiaomi Redmi 7,Xiaomi,12,256,3700,64.0,6.6,Helio G99,2,76923,whatmobile,2026-04-20T12:56:39.568471
+Vivo V24,Vivo,12,128,3300,64.0,6.6,Snapdragon 680,2,76923,whatmobile,2026-04-20T12:56:39.679903
+Infinix Zero 28,Infinix,12,128,3500,64.0,6.9,Snapdragon 7 Gen 1,3,76923,whatmobile,2026-04-20T12:56:39.853242
+Samsung Galaxy M5,Samsung,6,128,3300,108.0,6.6,Snapdragon 680,2,79920,whatmobile,2026-04-20T12:56:39.329406
+Vivo T19,Vivo,6,1024,3400,64.0,6.6,Snapdragon 778G,3,80919,whatmobile,2026-04-20T12:56:39.759139
+Realme GT 16,Realme,8,512,3800,64.0,6.8,Helio G88,2,80919,megapk,2026-04-20T12:56:39.795678
+OnePlus Nord 18,OnePlus,8,512,3500,50.0,6.8,Helio G88,2,80919,whatmobile,2026-04-20T12:56:40.111064
+Samsung Galaxy S19,Samsung,6,1024,3400,64.0,6.5,Snapdragon 680,2,81918,whatmobile,2026-04-20T12:56:39.441523
+OnePlus Nord CE 15,OnePlus,12,256,3300,50.0,6.5,Dimensity 8200,3,81918,hamariweb,2026-04-20T12:56:40.113113
+Vivo Y10,Vivo,8,512,3400,64.0,6.8,Snapdragon 685,2,82917,whatmobile,2026-04-20T12:56:39.662816
+Xiaomi Redmi Note 25,Xiaomi,12,512,3300,50.0,6.6,Helio G88,2,82917,hamariweb,2026-04-20T12:56:39.560188
+Vivo T18,Vivo,8,256,3300,64.0,6.9,Snapdragon 680,2,83916,megapk,2026-04-20T12:56:39.758001
+Xiaomi Poco X20,Xiaomi,8,512,3900,108.0,6.9,Dimensity 8200,3,83916,whatmobile,2026-04-20T12:56:39.488840
+OnePlus Nord CE 13,OnePlus,6,1024,3500,50.0,6.7,Snapdragon 7 Gen 1,3,83916,hamariweb,2026-04-20T12:56:40.108088
+Infinix Note 14,Infinix,8,512,3300,64.0,6.5,Snapdragon 685,2,83916,whatmobile,2026-04-20T12:56:39.854276
+Oppo A29,Oppo,12,512,3700,50.0,6.6,Dimensity 7300,3,85914,whatmobile,2026-04-20T12:56:39.658356
+Xiaomi Poco X15,Xiaomi,8,512,3500,50.0,6.6,Snapdragon 778G,3,85914,whatmobile,2026-04-20T12:56:39.580357
+Xiaomi Redmi Note 15,Xiaomi,8,256,3400,64.0,6.6,Snapdragon 680,2,85914,hamariweb,2026-04-20T12:56:39.481011
+Oppo A15,Oppo,12,256,4000,108.0,6.8,Dimensity 7300,3,85914,whatmobile,2026-04-20T12:56:39.634954
+Samsung Galaxy F12,Samsung,12,256,3200,50.0,6.7,Snapdragon 778G,3,87912,whatmobile,2026-04-20T12:56:39.439241
+Vivo T12,Vivo,8,256,2900,108.0,6.5,Snapdragon 685,2,88911,whatmobile,2026-04-20T12:56:39.762451
+Vivo Y14,Vivo,8,256,4100,64.0,6.7,Snapdragon 685,2,88911,whatmobile,2026-04-20T12:56:39.727973
+Vivo T27,Vivo,8,1024,3400,64.0,6.8,Snapdragon 685,2,88911,whatmobile,2026-04-20T12:56:39.747282
+Vivo Y11,Vivo,8,256,3300,50.0,6.6,Snapdragon 685,2,88911,hamariweb,2026-04-20T12:56:39.725963
+OnePlus 25,OnePlus,12,256,2700,108.0,6.8,Dimensity 6100,2,89910,hamariweb,2026-04-20T12:56:40.111988
+Xiaomi Poco X6,Xiaomi,8,512,3200,50.0,6.6,Snapdragon 778G,3,89910,hamariweb,2026-04-20T12:56:39.561426
+Samsung Galaxy S22,Samsung,12,512,3400,108.0,6.9,Dimensity 8200,3,91908,hamariweb,2026-04-20T12:56:39.446706
+Samsung Galaxy A5,Samsung,6,256,4100,64.0,6.6,Snapdragon 7 Gen 1,3,92907,whatmobile,2026-04-20T12:56:39.456677
+Xiaomi Redmi 22,Xiaomi,8,1024,3200,50.0,6.5,Snapdragon 778G,3,93906,whatmobile,2026-04-20T12:56:39.557942
+Vivo Y17,Vivo,6,256,3200,108.0,6.6,Snapdragon 685,2,95904,whatmobile,2026-04-20T12:56:39.683864
+Oppo A27,Oppo,6,512,3700,64.0,6.8,Snapdragon 685,2,97902,megapk,2026-04-20T12:56:39.581744
+Xiaomi Poco M14,Xiaomi,12,512,3300,108.0,6.7,Snapdragon 7 Gen 1,3,98901,whatmobile,2026-04-20T12:56:39.573690
+Vivo X13,Vivo,8,512,3600,200.0,6.8,Dimensity 9400,4,104895,megapk,2026-04-20T12:56:39.746733
+Xiaomi Redmi Note 7,Xiaomi,8,1024,3700,108.0,6.8,Snapdragon 8 Gen 3,4,106893,whatmobile,2026-04-20T12:56:39.567160
+Samsung Galaxy M23,Samsung,8,256,3300,50.0,6.7,Dimensity 9400,4,107892,whatmobile,2026-04-20T12:56:39.461588
+Apple iPhone 13 Pro Max,Apple,8,256,4000,200.0,6.6,Apple A16,4,107892,whatmobile,2026-04-20T12:56:40.054537
+Huawei P19,Huawei,6,512,4100,108.0,6.7,Snapdragon 8 Elite,4,107892,whatmobile,2026-04-20T12:56:40.084410
+Samsung Galaxy F25,Samsung,12,256,3700,50.0,6.9,Apple A18,4,108891,whatmobile,2026-04-20T12:56:39.443236
+Samsung Galaxy S5,Samsung,8,1024,3800,200.0,6.5,Snapdragon 7 Gen 1,3,110889,whatmobile,2026-04-20T12:56:39.444408
+Huawei Nova 21,Huawei,8,256,4000,108.0,6.8,Exynos 2400,4,115884,megapk,2026-04-20T12:56:40.074333
+Samsung Galaxy M26,Samsung,6,512,3300,108.0,6.6,Dimensity 9400,4,119880,megapk,2026-04-20T12:56:39.328855
+Apple iPhone 5 Pro,Apple,12,512,3500,108.0,6.9,Apple A17,4,120879,megapk,2026-04-20T12:56:39.999210
+Samsung Galaxy S16,Samsung,12,1024,3000,108.0,6.6,Exynos 2400,4,124875,megapk,2026-04-20T12:56:39.440154
+Samsung Galaxy F11,Samsung,12,512,5100,108.0,6.5,Dimensity 7300,3,125874,whatmobile,2026-04-20T12:56:39.328306
+Huawei Mate 17,Huawei,12,256,3800,50.0,6.7,Snapdragon 8 Gen 3,4,125874,megapk,2026-04-20T12:56:40.080613
+OnePlus Nord 17,OnePlus,12,512,3800,108.0,6.8,Dimensity 9400,4,128871,whatmobile,2026-04-20T12:56:40.110190
+Xiaomi Poco X24,Xiaomi,12,512,4200,200.0,6.7,Snapdragon 8 Gen 3,4,136863,whatmobile,2026-04-20T12:56:39.555513
+Samsung Galaxy F24,Samsung,8,256,3300,200.0,6.8,Snapdragon 8 Gen 3,4,137862,whatmobile,2026-04-20T12:56:39.334686
+Realme C18,Realme,16,1024,4100,200.0,6.5,Snapdragon 8 Elite,4,137862,whatmobile,2026-04-20T12:56:39.797169
+Honor Play 13,Honor,8,256,3900,108.0,6.6,Snapdragon 8 Gen 3,4,141858,hamariweb,2026-04-20T12:56:40.096464
+Apple iPhone 17,Apple,12,1024,4100,50.0,6.5,Apple A15,4,143856,whatmobile,2026-04-20T12:56:39.990675
+Samsung Galaxy S7,Samsung,8,256,4000,200.0,6.6,Apple A18,4,143856,whatmobile,2026-04-20T12:56:39.460190
+Samsung Galaxy A14,Samsung,8,1024,3700,108.0,6.7,Snapdragon 7 Gen 1,3,143856,whatmobile,2026-04-20T12:56:39.324102
+Honor 15 Lite,Honor,12,256,3800,50.0,6.6,Dimensity 8200,3,145854,whatmobile,2026-04-20T12:56:40.092470
+Vivo V13,Vivo,8,512,4100,108.0,6.8,Dimensity 7300,3,146853,hamariweb,2026-04-20T12:56:39.755920
+Samsung Galaxy F23,Samsung,8,256,3600,50.0,6.8,Dimensity 9400,4,147852,megapk,2026-04-20T12:56:39.457842
+Xiaomi Redmi 29,Xiaomi,16,512,3700,108.0,6.8,Snapdragon 8 Gen 3,4,147852,whatmobile,2026-04-20T12:56:39.551407
+Samsung Galaxy A18,Samsung,12,1024,4000,50.0,6.8,Snapdragon 8 Elite,4,148851,whatmobile,2026-04-20T12:56:39.452554
+Oppo Find X24,Oppo,8,1024,3700,50.0,6.8,Snapdragon 778G,3,151848,whatmobile,2026-04-20T12:56:39.640484
+Oppo A13,Oppo,8,512,4100,200.0,6.7,Apple A18,4,154845,hamariweb,2026-04-20T12:56:39.641130
+OnePlus Nord CE 26,OnePlus,12,256,4300,50.0,6.7,Snapdragon 8 Elite,4,156843,whatmobile,2026-04-20T12:56:40.109336
+Vivo T11,Vivo,12,256,4100,108.0,6.6,Apple A18,4,158841,hamariweb,2026-04-20T12:56:39.680583
+Vivo T6,Vivo,12,512,4100,50.0,6.9,Dimensity 9400,4,158841,whatmobile,2026-04-20T12:56:39.757035
+Huawei Mate 16,Huawei,8,512,3800,108.0,6.6,Exynos 2400,4,160839,whatmobile,2026-04-20T12:56:40.073726
+Vivo T14,Vivo,12,256,4100,108.0,6.8,Apple A18,4,166833,megapk,2026-04-20T12:56:39.728524
+Vivo T24,Vivo,12,512,4300,108.0,6.6,Snapdragon 8 Gen 3,4,168831,whatmobile,2026-04-20T12:56:39.761472
+Vivo X25,Vivo,12,256,3500,50.0,6.8,Snapdragon 8 Elite,4,170829,whatmobile,2026-04-20T12:56:39.754250
+Huawei Y12,Huawei,12,512,3200,108.0,6.6,Dimensity 8200,3,177822,whatmobile,2026-04-20T12:56:40.079927
+Oppo Reno 12,Oppo,8,256,4000,200.0,6.8,Dimensity 9400,4,180819,whatmobile,2026-04-20T12:56:39.654856
+Samsung Galaxy F29,Samsung,8,256,3500,108.0,6.7,Snapdragon 7 Gen 1,3,180819,whatmobile,2026-04-20T12:56:39.326633
+Apple iPhone 15 Pro Max,Apple,8,256,3600,200.0,6.6,Apple A17,4,180819,hamariweb,2026-04-20T12:56:39.991274
+Xiaomi Poco M25,Xiaomi,12,512,3900,108.0,6.5,Dimensity 9400,4,195804,hamariweb,2026-04-20T12:56:39.548365
+Samsung Galaxy A20,Samsung,12,256,4500,200.0,6.7,Snapdragon 8 Elite,4,197802,megapk,2026-04-20T12:56:39.334094
+OnePlus 20 Pro,OnePlus,8,256,4500,108.0,6.8,Exynos 2400,4,200799,whatmobile,2026-04-20T12:56:40.106901
+OnePlus Nord 21,OnePlus,8,1024,3600,108.0,6.8,Snapdragon 8 Elite,4,215784,megapk,2026-04-20T12:56:40.105021
+Samsung Galaxy M22,Samsung,8,512,4400,108.0,6.8,Snapdragon 8 Gen 3,4,231768,megapk,2026-04-20T12:56:39.324936
+Apple iPhone 5,Apple,8,256,4000,108.0,6.7,Apple A16,4,240759,whatmobile,2026-04-20T12:56:40.056859
+Samsung Galaxy A21,Samsung,12,512,4700,200.0,6.6,Snapdragon 8 Gen 3,4,262737,megapk,2026-04-20T12:56:39.330676
+Samsung Galaxy A12,Samsung,8,512,4000,200.0,6.6,Snapdragon 7 Gen 1,3,263736,whatmobile,2026-04-20T12:56:39.333526
+Samsung Galaxy S21,Samsung,16,1024,4800,108.0,6.8,Snapdragon 8 Gen 3,4,269730,hamariweb,2026-04-20T12:56:39.418939
+Samsung Galaxy M12,Samsung,8,256,4900,200.0,6.6,Snapdragon 7 Gen 1,3,269730,megapk,2026-04-20T12:56:39.478504
+Samsung Galaxy F27,Samsung,12,256,4800,50.0,6.5,Snapdragon 7 Gen 1,3,281718,megapk,2026-04-20T12:56:39.444983
+OnePlus 19,OnePlus,12,512,5400,108.0,6.8,Snapdragon 8 Elite,4,326673,megapk,2026-04-20T12:56:40.108713
+Apple iPhone 8 Pro Max,Apple,8,512,5500,108.0,6.6,Apple A17,4,342657,hamariweb,2026-04-20T12:56:40.058699
+Samsung Galaxy A26,Samsung,12,1024,4500,200.0,6.6,Snapdragon 8 Elite,4,347652,whatmobile,2026-04-20T12:56:39.479073
+OnePlus Nord CE 10,OnePlus,12,512,4100,108.0,6.6,Exynos 2400,4,349650,hamariweb,2026-04-20T12:56:40.113685
+Apple iPhone 14 Pro Max,Apple,12,512,5400,50.0,6.7,Apple A17,4,370629,megapk,2026-04-20T12:56:39.991962
+Samsung Galaxy S29,Samsung,12,512,6100,108.0,6.6,Exynos 2400,4,408591,whatmobile,2026-04-20T12:56:39.343727
+Samsung Galaxy F15,Samsung,8,256,5500,108.0,6.6,Dimensity 7300,3,419580,whatmobile,2026-04-20T12:56:39.450815
+Samsung Galaxy F19,Samsung,12,256,5600,108.0,6.7,Snapdragon 7 Gen 1,3,432567,whatmobile,2026-04-20T12:56:39.325497
+Samsung Galaxy S26,Samsung,12,256,5200,50.0,6.7,Snapdragon 7 Gen 1,3,461538,hamariweb,2026-04-20T12:56:39.341635
+Apple iPhone 10 Pro,Apple,16,256,6500,108.0,6.5,Apple A17,4,477522,megapk,2026-04-20T12:56:39.990057
+Apple iPhone 9,Apple,12,256,5500,108.0,6.8,Apple A18,4,495504,whatmobile,2026-04-20T12:56:39.995915
+Apple iPhone 15,Apple,12,512,5700,108.0,6.8,Apple A16,4,499500,megapk,2026-04-20T12:56:40.051172

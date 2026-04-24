@@ -25,8 +25,8 @@ Pakistani buyers struggle with:
 ### 1.3 Solution
 A single chatbot UI backed by FastAPI:
 
-- Groq Llama3 is the primary extraction layer.
-- Regex parser is the fallback if Groq fails or is unavailable.
+- OpenRouter-hosted Llama models are the primary extraction layer.
+- Regex parser is the fallback if OpenRouter fails or is unavailable.
 - A lightweight, in-project k-NN implementation predicts budget tier.
 - Cached JSON phone data is filtered and ranked to return top options.
 
@@ -51,15 +51,15 @@ A single chatbot UI backed by FastAPI:
 ### 3.1 Tech Stack
 - Frontend: HTML5, CSS3, Vanilla JS
 - Backend: Python 3.11+, FastAPI, Uvicorn
-- NLP: Groq API (primary), Regex fallback
+- NLP: OpenRouter API (primary), Regex fallback
 - Classifier: Custom in-memory k-NN (no heavy ML runtime required)
 - Data Store: JSON files (`phones.json`, `training_data.json`)
 
 ### 3.2 Request Pipeline
 1. User submits message from chat UI.
 2. Frontend sends `POST /chat`.
-3. Backend extracts specs via Groq.
-4. If Groq fails/times out, backend uses regex parser.
+3. Backend extracts specs via OpenRouter.
+4. If OpenRouter fails/times out, backend uses regex parser.
 5. k-NN predicts tier.
 6. Recommender filters + ranks cached phones.
 7. API returns top 3 results and metadata.
@@ -67,8 +67,8 @@ A single chatbot UI backed by FastAPI:
 ### 3.3 NLP Fallback Logic
 ```python
 try:
-		specs = groq_extract(query)
-		nlp_source = "groq"
+		specs = openrouter_extract(query)
+		nlp_source = "openrouter"
 except Exception:
 		specs = regex_extract(query)
 		nlp_source = "regex"
@@ -166,7 +166,7 @@ Response:
 	"reply": "Top Mid-Range options near your needs:",
 	"tier": "Mid-Range",
 	"confidence": 0.8,
-	"nlp_source": "groq",
+	"nlp_source": "openrouter",
 	"phones": [
 		{
 			"name": "Phone Name",
@@ -185,7 +185,7 @@ Response:
 ```json
 {
 	"status": "ok",
-	"groq_configured": false,
+	"openrouter_configured": false,
 	"cache_age_hours": 1.2,
 	"phones_indexed": 120
 }
@@ -205,7 +205,7 @@ Response:
 5. End-to-end integration and demo testing.
 
 ## 9. Risks and Mitigations
-- Groq unavailable: regex fallback keeps system functional.
+- OpenRouter unavailable: regex fallback keeps system functional.
 - Stale scrape data: serve last successful cache.
 - Lower classifier quality: tune `k`, improve normalization and training examples.
 
@@ -243,10 +243,10 @@ python -m http.server 5500
 
 Open `http://localhost:5500`.
 
-Set optional Groq key for smarter extraction:
+Set optional OpenRouter key for smarter extraction:
 
 ```bash
-export GROQ_API_KEY="your_key_here"
+export OPENROUTER_API_KEY="your_key_here"
 ```
 
 ## 12. Data Refresh (Step 1)

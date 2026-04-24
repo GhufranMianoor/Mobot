@@ -25,12 +25,38 @@ class ChatResponse(BaseModel):
     reply: str
     tier: str
     confidence: float
-    nlp_source: Literal["groq", "regex"]
+    nlp_source: Literal["openrouter", "regex"]
+    intent_mode: Literal["recommend", "brand_list", "all_list"]
+    knn_used: bool
     phones: List[PhoneRecommendation]
 
 
 class HealthResponse(BaseModel):
     status: str
-    groq_configured: bool
+    openrouter_configured: bool
     cache_age_hours: float
     phones_indexed: int
+
+
+class SearchRequest(BaseModel):
+    query: str = Field(min_length=1, max_length=500)
+
+
+class SearchResultItem(BaseModel):
+    name: str
+    specs: str
+    price_pkr: int
+    source: str
+    url: str
+    actual_tier: str
+    predicted_tier: str
+    deal_badge: Literal["Great Deal", "Fair Price", "Overpriced"]
+
+
+class SearchResponse(BaseModel):
+    query: str
+    summary: str
+    tier_used: str
+    nlp_source: Literal["openrouter", "regex"]
+    total_results: int
+    results: List[SearchResultItem]
