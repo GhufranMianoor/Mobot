@@ -1,0 +1,50 @@
+name,brand,price_pkr,ram_gb,storage_gb,camera_mp,battery_mah,processor_tier,tier_label,source,source_url
+Samsung Galaxy S26 Ultra,Samsung,424999,12,256,200,5000,0,3,WhatMobile,https://www.whatmobile.com.pk/Samsung_Galaxy-S26-Ultra
+Xiaomi Redmi Note 15 Pro,Xiaomi,94999,8,256,200,6500,0,2,WhatMobile,https://www.whatmobile.com.pk/Xiaomi_Redmi-Note-15-Pro
+Tecno Camon 50 Pro,Tecno,85999,8,256,50,6150,0,2,WhatMobile,https://www.whatmobile.com.pk/Tecno_Camon-50-Pro
+Infinix Note 60,Infinix,84999,8,256,50,6500,0,2,WhatMobile,https://www.whatmobile.com.pk/Infinix_Note-60
+Xiaomi Redmi Note 15,Xiaomi,69999,8,128,108,6000,0,1,WhatMobile,https://www.whatmobile.com.pk/Xiaomi_Redmi-Note-15
+Vivo Y31d,Vivo,57999,6,128,50,7200,0,1,WhatMobile,https://www.whatmobile.com.pk/Vivo_Y31d
+Infinix Note Edge,Infinix,74999,8,256,50,6500,0,2,WhatMobile,https://www.whatmobile.com.pk/Infinix_Note-Edge
+Xiaomi 17 Ultra,Xiaomi,479999,16,512,50,6800,0,3,WhatMobile,https://www.whatmobile.com.pk/Xiaomi_17-Ultra
+Xiaomi 17,Xiaomi,329999,12,512,50,6330,0,3,WhatMobile,https://www.whatmobile.com.pk/Xiaomi_17
+Tecno Camon 50,Tecno,74999,8,256,50,6500,0,2,WhatMobile,https://www.whatmobile.com.pk/Tecno_Camon-50
+Realme 16 Pro Plus,Realme,199999,12,512,200,7000,0,3,WhatMobile,https://www.whatmobile.com.pk/Realme_16-Pro-Plus
+Vivo Y31d 8GB,Vivo,65999,8,128,50,7200,0,1,WhatMobile,https://www.whatmobile.com.pk/Vivo_Y31d-8GB
+ZTE nubia V80 Pro,ZTE,46999,8,256,50,5000,0,1,WhatMobile,https://www.whatmobile.com.pk/ZTE_nubia-V80-Pro
+ZTE nubia V80 Max,ZTE,41999,8,256,50,6000,0,1,WhatMobile,https://www.whatmobile.com.pk/ZTE_nubia-V80-Max
+Vivo Y11d,Vivo,43999,4,128,50,6500,0,1,WhatMobile,https://www.whatmobile.com.pk/Vivo_Y11d
+Oppo A6k,Oppo,49999,4,128,13,6100,0,1,WhatMobile,https://www.whatmobile.com.pk/Oppo_A6k
+Infinix Hot 60i 8GB,Infinix,44999,8,256,50,5160,0,1,WhatMobile,https://www.whatmobile.com.pk/Infinix_Hot-60i-8GB
+Oppo A5 8GB,Oppo,49999,8,128,50,6000,0,1,WhatMobile,https://www.whatmobile.com.pk/Oppo_A5-8GB
+Oppo A6c,Oppo,34999,4,64,13,7000,0,1,WhatMobile,https://www.whatmobile.com.pk/Oppo_A6c
+Tecno Spark Go 3,Tecno,31999,4,128,13,5000,0,1,WhatMobile,https://www.whatmobile.com.pk/Tecno_Spark-Go-3
+Vivo Y05 128GB,Vivo,37999,4,128,8,6500,0,1,WhatMobile,https://www.whatmobile.com.pk/Vivo_Y05-128GB
+Vivo Y05,Vivo,33999,4,64,8,6500,0,1,WhatMobile,https://www.whatmobile.com.pk/Vivo_Y05
+Oppo A6x,Oppo,33999,4,64,13,6500,0,1,WhatMobile,https://www.whatmobile.com.pk/Oppo_A6x
+Realme Note 60x 128GB,Realme,31999,4,128,8,5000,0,1,WhatMobile,https://www.whatmobile.com.pk/Realme_Note-60x-128GB
+itel City 200,itel,28999,4,128,50,5200,0,0,WhatMobile,https://www.whatmobile.com.pk/itel_City-200
+Honor X5c,Honor,27999,4,64,13,5260,0,0,WhatMobile,https://www.whatmobile.com.pk/Honor_X5c
+Dcode Cygnal Evo,Dcode,27999,4,128,13,5000,0,0,WhatMobile,https://www.whatmobile.com.pk/Dcode_Cygnal-Evo
+Sparx Neo 15 Ultra,Sparx,29499,6,128,50,5000,0,0,WhatMobile,https://www.whatmobile.com.pk/Sparx_Neo-15-Ultra
+Sparx Neo 15 Pro,Sparx,23499,4,128,13,5000,0,0,WhatMobile,https://www.whatmobile.com.pk/Sparx_Neo-15-Pro
+itel A100C,itel,23999,4,64,8,5000,0,0,WhatMobile,https://www.whatmobile.com.pk/itel_A100C
+Sparx Neo 15,Sparx,19999,4,64,13,4500,0,0,WhatMobile,https://www.whatmobile.com.pk/Sparx_Neo-15
+Sparx Neo 8i,Sparx,17499,4,64,13,5000,0,0,WhatMobile,https://www.whatmobile.com.pk/Sparx_Neo-8i
+Tecno Spark Go 2,Tecno,19999,2,64,13,5000,0,0,WhatMobile,https://www.whatmobile.com.pk/Tecno_Spark-Go-2
+SEGO Smart 9 HD,SEGO,14999,2,64,13,4000,0,0,WhatMobile,https://www.whatmobile.com.pk/SEGO_Smart-9-HD
+itel A50c 64GB,itel,16999,2,64,8,4000,0,0,WhatMobile,https://www.whatmobile.com.pk/itel_A50c-64GB
+itel A50c,itel,14999,2,32,8,4000,0,0,WhatMobile,https://www.whatmobile.com.pk/itel_A50c
+itel Muzik 400 Pro,itel,4400,6,128,50,3000,0,0,WhatMobile,https://www.whatmobile.com.pk/itel_Muzik-400-Pro
+itel Muzik 400,itel,3700,6,128,50,3000,0,0,WhatMobile,https://www.whatmobile.com.pk/itel_Muzik-400
+Nokia 125 2024,Nokia,5199,6,128,50,1450,0,0,WhatMobile,https://www.whatmobile.com.pk/Nokia_125-2024
+Nokia 108 2024,Nokia,4199,6,128,50,1450,0,0,WhatMobile,https://www.whatmobile.com.pk/Nokia_108-2024
+Nokia 105 Classic,Nokia,2999,6,128,50,5000,0,0,WhatMobile,https://www.whatmobile.com.pk/Nokia_105-Classic
+itel Super Guru 600,itel,4499,6,128,3,1900,0,0,WhatMobile,https://www.whatmobile.com.pk/itel_Super-Guru-600
+Infinix Note 60 Ultra,Infinix,94999,12,512,200,7000,0,2,WhatMobile,https://www.whatmobile.com.pk/Infinix_Note-60-Ultra
+Vivo Y29s,Vivo,54999,8,256,50,5500,0,1,WhatMobile,https://www.whatmobile.com.pk/Vivo_Y29s
+Samsung Galaxy Z Fold 7,Samsung,608999,16,512,200,4400,0,3,WhatMobile,https://www.whatmobile.com.pk/Samsung_Galaxy-Z-Fold-7
+Xiaomi Redmi 13,Xiaomi,36999,6,128,108,5030,1,1,MegaPK,https://megapk.com
+Vivo Y200,Vivo,69999,8,256,64,4800,1,1,MegaPK,https://megapk.com
+Samsung Galaxy S24,Samsung,189999,8,256,50,4000,2,3,MegaPK,https://megapk.com
+OnePlus 12,OnePlus,269999,16,512,50,5400,2,3,MegaPK,https://megapk.com

@@ -1,0 +1,16 @@
+{
+  "phones": [
+    {"name": "Infinix Smart 8", "brand": "Infinix", "ram_gb": 4, "storage_gb": 64, "camera_mp": 13, "battery_mah": 5000, "processor_tier": 0, "price_pkr": 23999, "source": "WhatMobile", "url": "https://www.whatmobile.com.pk", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Tecno Spark 20", "brand": "Tecno", "ram_gb": 8, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 0, "price_pkr": 29999, "source": "HamariWeb", "url": "https://hamariweb.com", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Xiaomi Redmi 13", "brand": "Xiaomi", "ram_gb": 6, "storage_gb": 128, "camera_mp": 108, "battery_mah": 5030, "processor_tier": 1, "price_pkr": 36999, "source": "MegaPK", "url": "https://megapk.com", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Samsung Galaxy A15", "brand": "Samsung", "ram_gb": 6, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 1, "price_pkr": 47999, "source": "WhatMobile", "url": "https://www.whatmobile.com.pk", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Realme Narzo 60x", "brand": "Realme", "ram_gb": 8, "storage_gb": 128, "camera_mp": 64, "battery_mah": 5000, "processor_tier": 1, "price_pkr": 49999, "source": "HamariWeb", "url": "https://hamariweb.com", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Vivo Y200", "brand": "Vivo", "ram_gb": 8, "storage_gb": 256, "camera_mp": 64, "battery_mah": 4800, "processor_tier": 1, "price_pkr": 69999, "source": "MegaPK", "url": "https://megapk.com", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Oppo Reno 11", "brand": "Oppo", "ram_gb": 12, "storage_gb": 256, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 2, "price_pkr": 114999, "source": "WhatMobile", "url": "https://www.whatmobile.com.pk", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Xiaomi 13T", "brand": "Xiaomi", "ram_gb": 12, "storage_gb": 256, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 2, "price_pkr": 139999, "source": "HamariWeb", "url": "https://hamariweb.com", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Samsung Galaxy S24", "brand": "Samsung", "ram_gb": 8, "storage_gb": 256, "camera_mp": 50, "battery_mah": 4000, "processor_tier": 2, "price_pkr": 189999, "source": "MegaPK", "url": "https://megapk.com", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "iPhone 15", "brand": "Apple", "ram_gb": 6, "storage_gb": 128, "camera_mp": 48, "battery_mah": 3349, "processor_tier": 2, "price_pkr": 239999, "source": "WhatMobile", "url": "https://www.whatmobile.com.pk", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "Google Pixel 8", "brand": "Google", "ram_gb": 8, "storage_gb": 128, "camera_mp": 50, "battery_mah": 4575, "processor_tier": 2, "price_pkr": 209999, "source": "HamariWeb", "url": "https://hamariweb.com", "scraped_at": "2026-04-24T08:00:00+00:00"},
+    {"name": "OnePlus 12", "brand": "OnePlus", "ram_gb": 16, "storage_gb": 512, "camera_mp": 50, "battery_mah": 5400, "processor_tier": 2, "price_pkr": 269999, "source": "MegaPK", "url": "https://megapk.com", "scraped_at": "2026-04-24T08:00:00+00:00"}
+  ]
+}

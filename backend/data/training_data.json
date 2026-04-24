@@ -1,0 +1,20 @@
+{
+  "samples": [
+    {"ram_gb": 3, "storage_gb": 32, "camera_mp": 13, "battery_mah": 4000, "processor_tier": 0, "tier_label": 0},
+    {"ram_gb": 4, "storage_gb": 64, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 0, "tier_label": 0},
+    {"ram_gb": 4, "storage_gb": 64, "camera_mp": 48, "battery_mah": 5000, "processor_tier": 1, "tier_label": 1},
+    {"ram_gb": 6, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 1, "tier_label": 1},
+    {"ram_gb": 8, "storage_gb": 128, "camera_mp": 64, "battery_mah": 5000, "processor_tier": 1, "tier_label": 1},
+    {"ram_gb": 8, "storage_gb": 256, "camera_mp": 108, "battery_mah": 5000, "processor_tier": 2, "tier_label": 2},
+    {"ram_gb": 12, "storage_gb": 256, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 2, "tier_label": 2},
+    {"ram_gb": 12, "storage_gb": 512, "camera_mp": 200, "battery_mah": 5000, "processor_tier": 2, "tier_label": 3},
+    {"ram_gb": 16, "storage_gb": 512, "camera_mp": 200, "battery_mah": 5000, "processor_tier": 2, "tier_label": 3},
+    {"ram_gb": 6, "storage_gb": 128, "camera_mp": 108, "battery_mah": 6000, "processor_tier": 1, "tier_label": 1},
+    {"ram_gb": 8, "storage_gb": 256, "camera_mp": 50, "battery_mah": 6000, "processor_tier": 1, "tier_label": 2},
+    {"ram_gb": 12, "storage_gb": 256, "camera_mp": 108, "battery_mah": 5500, "processor_tier": 2, "tier_label": 2},
+    {"ram_gb": 4, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 0, "tier_label": 1},
+    {"ram_gb": 8, "storage_gb": 128, "camera_mp": 50, "battery_mah": 5000, "processor_tier": 0, "tier_label": 1},
+    {"ram_gb": 3, "storage_gb": 32, "camera_mp": 8, "battery_mah": 3000, "processor_tier": 0, "tier_label": 0},
+    {"ram_gb": 16, "storage_gb": 1024, "camera_mp": 200, "battery_mah": 5000, "processor_tier": 2, "tier_label": 3}
+  ]
+}

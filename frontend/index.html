@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobot - Phone Recommender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div class="chat-profile">
+          <div class="avatar" aria-hidden="true">M</div>
+          <div>
+            <h1>Mobot</h1>
+            <p>online</p>
+          </div>
+        </div>
+        <div class="header-actions" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <section id="chatThread" class="chat-thread" aria-live="polite">
+        <article class="bubble bot">
+          <p>Assalam-o-alaikum! Tell me your budget and priorities (camera, gaming, battery, brand).</p>
+        </article>
+      </section>
+
+      <section class="chips" id="chips">
+        <button class="chip" type="button">Phone under 50k with good camera</button>
+        <button class="chip" type="button">8GB RAM Samsung under 60k</button>
+        <button class="chip" type="button">Gaming phone 80k tak</button>
+      </section>
+
+      <form id="chatForm" class="input-row">
+        <textarea id="messageInput" placeholder="Type your query..." rows="1" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <template id="phoneCardTemplate">
+      <li class="phone-card">
+        <h3 class="phone-name"></h3>
+        <p class="phone-specs"></p>
+        <div class="meta-row">
+          <span class="price"></span>
+          <a class="source-link" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </li>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

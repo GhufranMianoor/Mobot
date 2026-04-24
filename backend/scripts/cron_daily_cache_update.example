@@ -1,0 +1,2 @@
+# Run daily at 3:00 AM server time
+0 3 * * * cd /workspaces/Mobot/backend && /usr/bin/python3 scripts/scrape_and_update_cache.py >> /workspaces/Mobot/backend/scrape.log 2>&1
