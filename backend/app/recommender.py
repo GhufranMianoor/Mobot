@@ -42,44 +42,18 @@ class Recommender:
         priority = (specs.get("priority") or "value").lower()
         intent_mode = (specs.get("intent_mode") or "recommend").lower()
 
-        if intent_mode == "all_list":
-            candidates = sorted(self.phones, key=lambda p: int(p.get("price_pkr") or 0))
-            return [
-                {
-                    "name": phone["name"],
-                    "specs": (
-                        f"{phone['ram_gb']}GB | {phone['storage_gb']}GB | "
-                        f"{phone['camera_mp']}MP | {phone['battery_mah']}mAh"
-                    ),
-                    "price_pkr": int(phone["price_pkr"]),
-                    "source": phone["source"],
-                    "url": phone["url"],
-                }
-                for phone in candidates
-            ]
+        candidates = sorted(self.phones, key=lambda p: int(p.get("price_pkr") or 0))
 
         if intent_mode == "brand_list" and brand:
-            candidates = [p for p in self.phones if p.get("brand", "").lower() == brand.lower()]
-            candidates.sort(key=lambda p: int(p.get("price_pkr") or 0))
+            candidates = [p for p in candidates if p.get("brand", "").lower() == brand.lower()]
 
-            return [
-                {
-                    "name": phone["name"],
-                    "specs": (
-                        f"{phone['ram_gb']}GB | {phone['storage_gb']}GB | "
-                        f"{phone['camera_mp']}MP | {phone['battery_mah']}mAh"
-                    ),
-                    "price_pkr": int(phone["price_pkr"]),
-                    "source": phone["source"],
-                    "url": phone["url"],
-                }
-                for phone in candidates
-            ]
-
-        if tier:
+        if intent_mode == "all_list":
+            pass
+        elif tier:
             candidates = [p for p in self.phones if _tier_from_price(int(p["price_pkr"])) == tier]
-        else:
-            candidates = list(self.phones)
+
+        if intent_mode == "all_list" and tier:
+            candidates = [p for p in candidates if _tier_from_price(int(p["price_pkr"])) == tier]
 
         if ram_gb is not None:
             candidates = [p for p in candidates if int(p.get("ram_gb") or 0) >= int(ram_gb)]
