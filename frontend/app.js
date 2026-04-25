@@ -14,7 +14,7 @@ const diagPanel = document.getElementById("diagPanel");
 function renderMeta(data) {
   resultMeta.innerHTML = `
     <p class="summary">${data.summary}</p>
-    <p class="subsummary">Tier used: <strong>${data.tier_used}</strong> · NLP: <strong>${data.nlp_source}</strong> · Results: <strong>${data.total_results}</strong></p>
+    <p class="subsummary">Tier used: <strong>${data.tier_used}</strong>${data.predicted_tier ? ` · Predicted: <strong>${data.predicted_tier}</strong>` : ""} · NLP: <strong>${data.nlp_source}</strong> · Results: <strong>${data.total_results}</strong></p>
   `;
 }
 

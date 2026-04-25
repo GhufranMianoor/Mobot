@@ -30,6 +30,15 @@ BRANDS = [
 def _detect_deal_filter(query: str) -> str | None:
     lowered = query.lower()
 
+    budget_friendly_tokens = (
+        "sasta",
+        "saste",
+        "budget friendly",
+        "budget-friendly",
+        "value for money",
+        "affordable",
+        "cheap phone",
+    )
     overpriced_tokens = (
         "overpriced",
         "over priced",
@@ -38,13 +47,7 @@ def _detect_deal_filter(query: str) -> str | None:
         "zyada price",
         "expensive",
     )
-    great_tokens = (
-        "great deal",
-        "best deal",
-        "sasta",
-        "cheap deal",
-        "value deal",
-    )
+    great_tokens = ("great deal", "best deal", "cheap deal", "value deal")
     fair_tokens = (
         "fair price",
         "balanced",
@@ -52,6 +55,10 @@ def _detect_deal_filter(query: str) -> str | None:
         "reasonable",
     )
 
+    if any(token in lowered for token in ("not overpriced", "no overpriced", "without overpriced", "non overpriced")):
+        return "Fair Price"
+    if any(token in lowered for token in budget_friendly_tokens):
+        return "Budget-Friendly"
     if any(token in lowered for token in overpriced_tokens):
         return "Overpriced"
     if any(token in lowered for token in great_tokens):
@@ -100,7 +107,14 @@ def _extract_budget(raw: str) -> int | None:
     if k_match:
         return int(k_match.group(1)) * 1000
 
-    numeric_match = re.search(r"(?:rs\.?\s*)?(\d{4,6})", text)
+    price_context_match = re.search(
+        r"(?:rs\.?|pkr|rupees?|price|budget|under|below|within|less than)\s*(\d{4,6})",
+        text,
+    )
+    if price_context_match:
+        return int(price_context_match.group(1))
+
+    numeric_match = re.search(r"(\d{4,6})\s*(?:rs\.?|pkr|rupees?)", text)
     if numeric_match:
         return int(numeric_match.group(1))
 
@@ -162,7 +176,7 @@ def openrouter_extract(query: str) -> Dict:
         "budget_pkr, ram_gb, storage_gb, camera_mp, battery_mah, brand, priority, intent_mode, deal_filter. "
         "Use null when unknown. priority should be one of: value, camera, performance, gaming, business, battery. "
         "intent_mode should be one of recommend, brand_list, all_list. "
-        "deal_filter should be one of Great Deal, Fair Price, Overpriced, or null. "
+        "deal_filter should be one of Budget-Friendly, Great Deal, Fair Price, Overpriced, or null. "
         "Use brand_list when the user asks for all/list/show/display/every phone from a specific brand. "
         "Use all_list when the user asks for all/list/show/display/every phones without naming a brand."
     )
@@ -209,6 +223,7 @@ def openrouter_extract(query: str) -> Dict:
         if regex_based.get("priority") and regex_based.get("priority") != "value"
         else (parsed.get("priority") or regex_based.get("priority") or "value")
     )
+    merged_deal_filter = regex_based.get("deal_filter") or parsed.get("deal_filter")
 
     return {
         "budget_pkr": _pick_numeric("budget_pkr"),
@@ -220,7 +235,7 @@ def openrouter_extract(query: str) -> Dict:
         "priority": merged_priority,
         "intent_mode": _detect_intent_mode(query, merged_brand) or parsed.get("intent_mode") or "recommend",
         "requested_tier": _detect_requested_tier(query),
-        "deal_filter": _detect_deal_filter(query) or parsed.get("deal_filter"),
+        "deal_filter": merged_deal_filter,
     }
 
 

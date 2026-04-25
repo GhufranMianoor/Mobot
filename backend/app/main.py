@@ -72,6 +72,25 @@ def _deal_badge(actual_tier: str, predicted_tier: str) -> str:
     return "Fair Price"
 
 
+def _tier_to_summary_label(tier: Optional[str]) -> str:
+    if not tier or tier == "Any":
+        return ""
+    return tier.lower()
+
+
+def _feature_summary_parts(specs: Dict) -> list[str]:
+    parts: list[str] = []
+    if specs.get("ram_gb") is not None:
+        parts.append(f"at least {int(specs['ram_gb'])}GB RAM")
+    if specs.get("storage_gb") is not None:
+        parts.append(f"at least {int(specs['storage_gb'])}GB storage")
+    if specs.get("camera_mp") is not None:
+        parts.append(f"at least {int(specs['camera_mp'])}MP camera")
+    if specs.get("battery_mah") is not None:
+        parts.append(f"at least {int(specs['battery_mah'])}mAh battery")
+    return parts
+
+
 def _build_feature_vector(specs: Dict) -> Dict[str, float]:
     return {
         "ram_gb": float(specs.get("ram_gb") or 6),
@@ -80,6 +99,13 @@ def _build_feature_vector(specs: Dict) -> Dict[str, float]:
         "battery_mah": float(specs.get("battery_mah") or 5000),
         "processor_tier": 1.0,
     }
+
+
+def _has_phone_details(specs: Dict) -> bool:
+    return any(
+        specs.get(key) is not None
+        for key in ("ram_gb", "storage_gb", "camera_mp", "battery_mah")
+    )
 
 
 def _select_tier_from_specs(specs: Dict, intent_mode: str) -> tuple[Optional[str], float, bool]:
@@ -92,6 +118,11 @@ def _select_tier_from_specs(specs: Dict, intent_mode: str) -> tuple[Optional[str
         return requested_tier, 0.95, False
     if budget is not None:
         return _tier_from_budget(int(budget)), 0.92, False
+
+    if _has_phone_details(specs):
+        features = _build_feature_vector(specs)
+        prediction = classifier.predict(features)
+        return prediction.tier, prediction.confidence, True
 
     # No explicit budget/tier context: search across all tiers instead of forcing Mid-Range.
     return None, 0.85, False
@@ -278,6 +309,10 @@ def search(request: SearchRequest) -> SearchResponse:
     intent_mode = (specs.get("intent_mode") or "recommend").lower()
     tier, _, _ = _select_tier_from_specs(specs, intent_mode)
     deal_filter = specs.get("deal_filter")
+    tier_label = _tier_to_summary_label(tier)
+    deal_label = "budget-friendly" if deal_filter == "Budget-Friendly" else (deal_filter.lower() if deal_filter else "")
+    feature_parts = _feature_summary_parts(specs)
+    predicted_tier = tier if _has_phone_details(specs) else None
 
     results = recommender.recommend(specs=specs, tier=tier, top_k=24)
     phones_by_name = {p.get("name"): p for p in recommender.phones}
@@ -292,7 +327,7 @@ def search(request: SearchRequest) -> SearchResponse:
             "battery_mah": float(raw.get("battery_mah") or 5000),
             "processor_tier": float(raw.get("processor_tier") or 1),
         }
-        predicted_tier = classifier.predict(features).tier
+        item_predicted_tier = classifier.predict(features).tier
         actual_tier = _tier_from_price(int(phone.get("price_pkr") or 0))
 
         enriched.append(
@@ -303,22 +338,34 @@ def search(request: SearchRequest) -> SearchResponse:
                 "source": phone["source"],
                 "url": phone["url"],
                 "actual_tier": actual_tier,
-                "predicted_tier": predicted_tier,
-                "deal_badge": _deal_badge(actual_tier, predicted_tier),
+                "predicted_tier": item_predicted_tier,
+                "deal_badge": _deal_badge(actual_tier, item_predicted_tier),
             }
         )
 
-    if deal_filter in {"Great Deal", "Fair Price", "Overpriced"}:
+    if deal_filter == "Budget-Friendly":
+        enriched = [item for item in enriched if item.get("actual_tier") in {"Budget", "Mid-Range"}]
+    elif deal_filter in {"Great Deal", "Fair Price", "Overpriced"}:
         enriched = [item for item in enriched if item.get("deal_badge") == deal_filter]
 
     if intent_mode == "all_list" and deal_filter:
-        summary = f"Showing all {deal_filter.lower()} phones ({len(enriched)} results)."
+        summary_parts = ["Showing all"]
+        if tier_label:
+            summary_parts.append(tier_label)
+        if deal_label:
+            summary_parts.append(deal_label)
+        summary = f"{' '.join(summary_parts)} phones ({len(enriched)} results)."
     elif intent_mode == "all_list":
         summary = f"Showing all phones ({len(enriched)} results)."
     elif intent_mode == "brand_list" and specs.get("brand"):
         summary = f"Showing {len(enriched)} {specs['brand']} phones."
     elif deal_filter:
-        summary = f"Found {len(enriched)} {deal_filter.lower()} results for your search."
+        if tier_label:
+            summary = f"Found {len(enriched)} {tier_label}, {deal_label} phones for your search."
+        else:
+            summary = f"Found {len(enriched)} {deal_label} phones for your search."
+    elif feature_parts:
+        summary = f"Found {len(enriched)} phones matching {', '.join(feature_parts)}."
     else:
         summary = f"Found {len(enriched)} results for your search."
 
@@ -326,6 +373,7 @@ def search(request: SearchRequest) -> SearchResponse:
         query=request.query,
         summary=summary,
         tier_used=tier or "Any",
+        predicted_tier=predicted_tier,
         nlp_source=nlp_source,
         total_results=len(enriched),
         results=enriched,

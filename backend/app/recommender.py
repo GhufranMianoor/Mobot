@@ -34,6 +34,11 @@ class Recommender:
     def recommend(self, specs: Dict, tier: Optional[str], top_k: int = 3) -> List[Dict]:
         budget = specs.get("budget_pkr")
         brand = specs.get("brand")
+        ram_gb = specs.get("ram_gb")
+        storage_gb = specs.get("storage_gb")
+        camera_mp = specs.get("camera_mp")
+        battery_mah = specs.get("battery_mah")
+        has_explicit_feature_filters = any(value is not None for value in (ram_gb, storage_gb, camera_mp, battery_mah))
         priority = (specs.get("priority") or "value").lower()
         intent_mode = (specs.get("intent_mode") or "recommend").lower()
 
@@ -76,6 +81,18 @@ class Recommender:
         else:
             candidates = list(self.phones)
 
+        if ram_gb is not None:
+            candidates = [p for p in candidates if int(p.get("ram_gb") or 0) >= int(ram_gb)]
+
+        if storage_gb is not None:
+            candidates = [p for p in candidates if int(p.get("storage_gb") or 0) >= int(storage_gb)]
+
+        if camera_mp is not None:
+            candidates = [p for p in candidates if int(p.get("camera_mp") or 0) >= int(camera_mp)]
+
+        if battery_mah is not None:
+            candidates = [p for p in candidates if int(p.get("battery_mah") or 0) >= int(battery_mah)]
+
         if budget:
             budget_candidates = [p for p in candidates if int(p["price_pkr"]) <= int(budget)]
             if budget_candidates:
@@ -87,7 +104,7 @@ class Recommender:
         if brand:
             candidates = [p for p in candidates if p.get("brand", "").lower() == brand.lower()]
 
-        if not candidates and tier:
+        if not candidates and tier and not has_explicit_feature_filters:
             candidates = [p for p in self.phones if _tier_from_price(int(p["price_pkr"])) == tier]
 
         if not candidates:

@@ -57,6 +57,7 @@ class SearchResponse(BaseModel):
     query: str
     summary: str
     tier_used: str
+    predicted_tier: Optional[str] = None
     nlp_source: Literal["openrouter", "regex"]
     total_results: int
     results: List[SearchResultItem]
