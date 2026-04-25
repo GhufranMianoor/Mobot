@@ -1,6 +1,6 @@
 const API_BASE =
   window.MOBOT_API_BASE ||
-  (window.location.hostname ? `${window.location.protocol}//${window.location.hostname}:8000` : "http://127.0.0.1:8000");
+  (window.location.protocol === "file:" ? "http://127.0.0.1:8000" : "");
 
 const searchForm = document.getElementById("searchForm");
 const queryInput = document.getElementById("queryInput");

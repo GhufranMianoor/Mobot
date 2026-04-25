@@ -8,6 +8,7 @@ from typing import Dict, Optional
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .classifier import LightweightKNN, select_best_k
 from .nlp import extract_specs
@@ -16,6 +17,7 @@ from .schemas import ChatRequest, ChatResponse, HealthResponse, SearchRequest, S
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
+FRONTEND_DIR = BASE_DIR.parent / "frontend"
 PHONES_PATH = DATA_DIR / "phones.json"
 TRAINING_PATH = DATA_DIR / "training_data.json"
 
@@ -378,3 +380,7 @@ def search(request: SearchRequest) -> SearchResponse:
         total_results=len(enriched),
         results=enriched,
     )
+
+
+if FRONTEND_DIR.exists():
+    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")

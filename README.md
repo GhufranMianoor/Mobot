@@ -258,6 +258,34 @@ cd backend
 python scripts/scrape_and_update_cache.py
 ```
 
+## 13. Deployment
+
+Recommended path: one Docker web service that serves both the frontend and backend.
+
+### Local Docker test
+
+```bash
+docker build -t mobot .
+docker run --rm -p 8000:8000 -e OPENROUTER_API_KEY="your_key_here" mobot
+```
+
+Open `http://localhost:8000`.
+
+### Render
+
+1. Push the repo to GitHub.
+2. Create a new Render Web Service from the repo.
+3. Render will read [render.yaml](render.yaml) and build the Docker image.
+4. Set `OPENROUTER_API_KEY` in Render environment variables.
+5. Deploy and open the service URL.
+6. If OpenRouter blocks requests, set `OPENROUTER_REFERER` to your deployed URL (for example, the Render service URL).
+
+Notes:
+
+- The frontend is served from the same app, so no separate static site is needed.
+- `OPENROUTER_API_KEY` is optional, but recommended for better extraction.
+- If you use another platform, the Dockerfile can be reused as-is.
+
 Daily scheduler example is provided in:
 
 `backend/scripts/cron_daily_cache_update.example`
