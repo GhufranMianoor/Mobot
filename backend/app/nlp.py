@@ -108,7 +108,7 @@ def _extract_budget(raw: str) -> int | None:
         return int(k_match.group(1)) * 1000
 
     price_context_match = re.search(
-        r"(?:rs\.?|pkr|rupees?|price|budget|under|below|within|less than)\s*(\d{4,6})",
+        r"(?:rs\.?|pkr|rupees?|price|budget|under|below|within|less than|above|over|greater than|more than|at least|from)\s*(\d{4,6})",
         text,
     )
     if price_context_match:
@@ -119,6 +119,36 @@ def _extract_budget(raw: str) -> int | None:
         return int(numeric_match.group(1))
 
     return None
+
+
+def _detect_budget_mode(query: str) -> str:
+    lowered = query.lower()
+
+    min_budget_terms = (
+        "above",
+        "over",
+        "greater than",
+        "more than",
+        "at least",
+        "minimum",
+        "starting from",
+        "from",
+    )
+    max_budget_terms = (
+        "under",
+        "below",
+        "less than",
+        "within",
+        "maximum",
+        "upto",
+        "up to",
+    )
+
+    if any(term in lowered for term in min_budget_terms):
+        return "min"
+    if any(term in lowered for term in max_budget_terms):
+        return "max"
+    return "max"
 
 
 def regex_extract(query: str) -> Dict:
@@ -152,6 +182,7 @@ def regex_extract(query: str) -> Dict:
 
     return {
         "budget_pkr": budget,
+        "budget_mode": _detect_budget_mode(query),
         "ram_gb": int(ram_match.group(1)) if ram_match else None,
         "storage_gb": int(storage_match.group(1)) if storage_match else None,
         "camera_mp": int(camera_match.group(1)) if camera_match else None,
@@ -173,9 +204,10 @@ def openrouter_extract(query: str) -> Dict:
 
     system_prompt = (
         "Extract mobile phone preferences from user text and return strict JSON with keys: "
-        "budget_pkr, ram_gb, storage_gb, camera_mp, battery_mah, brand, priority, intent_mode, deal_filter. "
+        "budget_pkr, budget_mode, ram_gb, storage_gb, camera_mp, battery_mah, brand, priority, intent_mode, deal_filter. "
         "Use null when unknown. priority should be one of: value, camera, performance, gaming, business, battery. "
         "intent_mode should be one of recommend, brand_list, all_list. "
+        "budget_mode should be one of min, max, or null. "
         "deal_filter should be one of Budget-Friendly, Great Deal, Fair Price, Overpriced, or null. "
         "Use brand_list when the user asks for all/list/show/display/every phone from a specific brand. "
         "Use all_list when the user asks for all/list/show/display/every phones without naming a brand."
@@ -223,10 +255,12 @@ def openrouter_extract(query: str) -> Dict:
         if regex_based.get("priority") and regex_based.get("priority") != "value"
         else (parsed.get("priority") or regex_based.get("priority") or "value")
     )
+    merged_budget_mode = regex_based.get("budget_mode") or parsed.get("budget_mode") or "max"
     merged_deal_filter = regex_based.get("deal_filter") or parsed.get("deal_filter")
 
     return {
         "budget_pkr": _pick_numeric("budget_pkr"),
+        "budget_mode": merged_budget_mode,
         "ram_gb": _pick_numeric("ram_gb"),
         "storage_gb": _pick_numeric("storage_gb"),
         "camera_mp": _pick_numeric("camera_mp"),

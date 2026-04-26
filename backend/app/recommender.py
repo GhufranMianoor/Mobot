@@ -33,6 +33,7 @@ class Recommender:
 
     def recommend(self, specs: Dict, tier: Optional[str], top_k: int = 3) -> List[Dict]:
         budget = specs.get("budget_pkr")
+        budget_mode = (specs.get("budget_mode") or "max").lower()
         brand = specs.get("brand")
         ram_gb = specs.get("ram_gb")
         storage_gb = specs.get("storage_gb")
@@ -68,12 +69,19 @@ class Recommender:
             candidates = [p for p in candidates if int(p.get("battery_mah") or 0) >= int(battery_mah)]
 
         if budget:
-            budget_candidates = [p for p in candidates if int(p["price_pkr"]) <= int(budget)]
+            if budget_mode == "min":
+                budget_candidates = [p for p in candidates if int(p["price_pkr"]) >= int(budget)]
+            else:
+                budget_candidates = [p for p in candidates if int(p["price_pkr"]) <= int(budget)]
+
             if budget_candidates:
                 candidates = budget_candidates
             else:
-                # If tier + budget gives no phones, broaden search to any phone under budget.
-                candidates = [p for p in self.phones if int(p["price_pkr"]) <= int(budget)]
+                # If tier + budget gives no phones, broaden search while preserving budget direction.
+                if budget_mode == "min":
+                    candidates = [p for p in self.phones if int(p["price_pkr"]) >= int(budget)]
+                else:
+                    candidates = [p for p in self.phones if int(p["price_pkr"]) <= int(budget)]
 
         if brand:
             candidates = [p for p in candidates if p.get("brand", "").lower() == brand.lower()]
