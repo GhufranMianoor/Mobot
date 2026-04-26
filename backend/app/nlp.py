@@ -26,6 +26,21 @@ BRANDS = [
     "OnePlus",
 ]
 
+BRAND_ALIASES = {
+    "Samsung": ("samsung", "sumsung", "samung", "sam sung"),
+    "Xiaomi": ("xiaomi", "xiomi", "redmi", "mi"),
+    "Infinix": ("infinix", "infnix", "infinx"),
+    "Tecno": ("tecno", "tekno", "tecnoo"),
+    "Realme": ("realme", "relme", "real mi"),
+    "Vivo": ("vivo", "vevo"),
+    "Oppo": ("oppo", "opo"),
+    "Apple": ("apple", "iphone", "iphon", "ifone"),
+    "Google": ("google", "pixel", "pixle"),
+    "OnePlus": ("oneplus", "one plus", "1plus", "oneplsu"),
+    "Nokia": ("nokia", "nokiya"),
+    "Motorola": ("motorola", "moto", "motrola"),
+}
+
 
 def _detect_deal_filter(query: str) -> str | None:
     lowered = query.lower()
@@ -121,6 +136,20 @@ def _extract_budget(raw: str) -> int | None:
     return None
 
 
+def _detect_brand(query: str) -> str | None:
+    lowered = query.lower()
+
+    for brand in BRANDS:
+        if brand.lower() in lowered:
+            return brand
+
+    for brand, aliases in BRAND_ALIASES.items():
+        if any(alias in lowered for alias in aliases):
+            return brand
+
+    return None
+
+
 def _detect_budget_mode(query: str) -> str:
     lowered = query.lower()
 
@@ -159,23 +188,25 @@ def regex_extract(query: str) -> Dict:
     camera_match = re.search(r"(\d{2,3})\s*mp", query, flags=re.IGNORECASE)
     battery_match = re.search(r"(\d{4,5})\s*mah", query, flags=re.IGNORECASE)
 
-    brand = None
-    for b in BRANDS:
-        if b.lower() in query.lower():
-            brand = b
-            break
+    brand = _detect_brand(query)
 
     priority = "value"
     lowered = query.lower()
-    if "camera" in lowered:
+    camera_tokens = ("camera", "camra", "cam", "selfie", "photo")
+    gaming_tokens = ("gaming", "game", "gamin", "pubg", "fps")
+    performance_tokens = ("performance", "performnce", "speed", "fast", "chipset", "processor")
+    business_tokens = ("business", "work", "office", "official")
+    battery_tokens = ("battery", "battry", "backup", "back up")
+
+    if any(token in lowered for token in camera_tokens):
         priority = "camera"
-    elif "gaming" in lowered:
+    elif any(token in lowered for token in gaming_tokens):
         priority = "gaming"
-    elif "performance" in lowered:
+    elif any(token in lowered for token in performance_tokens):
         priority = "performance"
-    elif "business" in lowered or "work" in lowered:
+    elif any(token in lowered for token in business_tokens):
         priority = "business"
-    elif "battery" in lowered:
+    elif any(token in lowered for token in battery_tokens):
         priority = "battery"
 
     intent_mode = _detect_intent_mode(query, brand)
@@ -197,25 +228,56 @@ def regex_extract(query: str) -> Dict:
 
 def openrouter_extract(query: str) -> Dict:
     api_key = os.getenv("OPENROUTER_API_KEY", "").strip()
-    model = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
+    model = os.getenv("OPENROUTER_MODEL", "anthropic/claude-3.5-haiku")
 
     if not api_key:
         raise RuntimeError("OPENROUTER_API_KEY is not configured")
 
     system_prompt = (
-        "Extract mobile phone preferences from user text and return strict JSON with keys: "
+        "You are an information extraction engine for a mobile phone recommender. "
+        "Read the user text and output ONLY one valid JSON object with no markdown, no explanation, no extra keys. "
+        "\n"
+        "Schema (exact keys only): "
         "budget_pkr, budget_mode, ram_gb, storage_gb, camera_mp, battery_mah, brand, priority, intent_mode, deal_filter. "
-        "Use null when unknown. priority should be one of: value, camera, performance, gaming, business, battery. "
-        "intent_mode should be one of recommend, brand_list, all_list. "
-        "budget_mode should be one of min, max, or null. "
-        "deal_filter should be one of Budget-Friendly, Great Deal, Fair Price, Overpriced, or null. "
-        "Use brand_list when the user asks for all/list/show/display/every phone from a specific brand. "
-        "Use all_list when the user asks for all/list/show/display/every phones without naming a brand."
+        "\n"
+        "Allowed values: "
+        "priority in [value, camera, performance, gaming, business, battery]; "
+        "intent_mode in [recommend, brand_list, all_list]; "
+        "budget_mode in [min, max, null]; "
+        "deal_filter in [Budget-Friendly, Great Deal, Fair Price, Overpriced, null]. "
+        "\n"
+        "Extraction rules: "
+        "1) Use null for unknown/missing fields. "
+        "2) budget_pkr must be an integer in PKR. Convert shorthand like 50k/50 K to 50000. "
+        "3) If user says under/below/within/max/upto/up to => budget_mode=max. "
+        "4) If user says above/over/from/at least/minimum/more than => budget_mode=min. "
+        "5) If budget is missing, budget_mode should be null. "
+        "6) Parse RAM/storage/camera/battery as integers only (e.g., 8GB -> 8, 108MP -> 108, 5000mAh -> 5000). "
+        "7) brand should be a clean brand name if explicitly mentioned, otherwise null. "
+        "8) intent_mode=brand_list when user asks to list/show/all phones of a specific brand. "
+        "9) intent_mode=all_list when user asks to list/show/all phones without specifying a brand. "
+        "10) Otherwise intent_mode=recommend. "
+        "11) priority mapping hints: camera/photo/selfie -> camera; gaming/game -> gaming; performance/speed/fast/chipset -> performance; "
+        "work/office/business -> business; battery/back-up/backup -> battery; else value. "
+        "12) deal_filter mapping hints: cheap/affordable/budget friendly/value for money -> Budget-Friendly; "
+        "great deal/best deal -> Great Deal; overpriced/expensive/mehnga -> Overpriced; fair/reasonable/theek price -> Fair Price. "
+        "13) Understand Urdu and Roman Urdu phrasing. Common hints: sasta/sasti/affordable -> Budget-Friendly; mehnga/mahinga -> Overpriced; "
+        "camera acha/zabardast camera -> camera priority; gaming ke liye/game k liye -> gaming priority; "
+        "battery achi/backup acha/long battery -> battery priority; performance fast/chale smooth -> performance priority. "
+        "14) Intent in Urdu/Roman Urdu: sab/sare/saare/list/dikhao/show all + brand => brand_list; "
+        "sab phones/sare mobiles/all mobiles without brand => all_list; otherwise recommend. "
+        "15) Budget in Urdu/Roman Urdu: andar/ke andar/tak/upto => budget_mode=max; upar/se zyada/kam az kam => budget_mode=min. "
+        "16) Be robust to common typos and variant spellings (for example: sumsung/samung => Samsung, camra => camera, battry => battery, "
+        "one plus => OnePlus, iphon => Apple). "
+        "\n"
+        "Output example format (values are examples only): "
+        '{"budget_pkr":50000,"budget_mode":"max","ram_gb":8,"storage_gb":128,"camera_mp":50,"battery_mah":5000,"brand":"Samsung","priority":"camera","intent_mode":"recommend","deal_filter":null}'
     )
 
     payload = {
         "model": model,
         "temperature": 0,
+        "max_tokens": 300,
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": query},

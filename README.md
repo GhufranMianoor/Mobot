@@ -4,7 +4,7 @@ AI-Driven Mobile Phone Price Tier Classifier and Recommender (Chatbot Edition)
 
 Version: v2.0 (Lightweight)
 Date: April 2026
-Status: Draft - Updated (Gemini Removed)
+Status: Draft - Updated (Gemini)
 
 ## 1. Project Overview
 
@@ -25,8 +25,8 @@ Pakistani buyers struggle with:
 ### 1.3 Solution
 A single chatbot UI backed by FastAPI:
 
-- OpenRouter-hosted Llama models are the primary extraction layer.
-- Regex parser is the fallback if OpenRouter fails or is unavailable.
+- Google Gemini is the primary extraction layer.
+- Regex parser is the fallback if Gemini fails or is unavailable.
 - A lightweight, in-project k-NN implementation predicts budget tier.
 - Cached JSON phone data is filtered and ranked to return top options.
 
@@ -51,15 +51,15 @@ A single chatbot UI backed by FastAPI:
 ### 3.1 Tech Stack
 - Frontend: HTML5, CSS3, Vanilla JS
 - Backend: Python 3.11+, FastAPI, Uvicorn
-- NLP: OpenRouter API (primary), Regex fallback
+- NLP: Gemini API (primary), Regex fallback
 - Classifier: Custom in-memory k-NN (no heavy ML runtime required)
 - Data Store: JSON files (`phones.json`, `training_data.json`)
 
 ### 3.2 Request Pipeline
 1. User submits message from chat UI.
 2. Frontend sends `POST /chat`.
-3. Backend extracts specs via OpenRouter.
-4. If OpenRouter fails/times out, backend uses regex parser.
+3. Backend extracts specs via Gemini.
+4. If Gemini fails/times out, backend uses regex parser.
 5. k-NN predicts tier.
 6. Recommender filters + ranks cached phones.
 7. API returns top 3 results and metadata.
@@ -67,8 +67,8 @@ A single chatbot UI backed by FastAPI:
 ### 3.3 NLP Fallback Logic
 ```python
 try:
-		specs = openrouter_extract(query)
-		nlp_source = "openrouter"
+		specs = gemini_extract(query)
+		nlp_source = "gemini"
 except Exception:
 		specs = regex_extract(query)
 		nlp_source = "regex"
@@ -166,7 +166,7 @@ Response:
 	"reply": "Top Mid-Range options near your needs:",
 	"tier": "Mid-Range",
 	"confidence": 0.8,
-	"nlp_source": "openrouter",
+	"nlp_source": "gemini",
 	"phones": [
 		{
 			"name": "Phone Name",
@@ -185,7 +185,7 @@ Response:
 ```json
 {
 	"status": "ok",
-	"openrouter_configured": false,
+	"gemini_configured": false,
 	"cache_age_hours": 1.2,
 	"phones_indexed": 120
 }
@@ -205,7 +205,7 @@ Response:
 5. End-to-end integration and demo testing.
 
 ## 9. Risks and Mitigations
-- OpenRouter unavailable: regex fallback keeps system functional.
+- Gemini unavailable: regex fallback keeps system functional.
 - Stale scrape data: serve last successful cache.
 - Lower classifier quality: tune `k`, improve normalization and training examples.
 
@@ -243,10 +243,10 @@ python -m http.server 5500
 
 Open `http://localhost:5500`.
 
-Set optional OpenRouter key for smarter extraction:
+Set your Gemini key for smarter extraction:
 
 ```bash
-export OPENROUTER_API_KEY="your_key_here"
+export GEMINI_API_KEY="your_key_here"
 ```
 
 ## 12. Data Refresh (Step 1)
@@ -266,7 +266,7 @@ Recommended path: one Docker web service that serves both the frontend and backe
 
 ```bash
 docker build -t mobot .
-docker run --rm -p 8000:8000 -e OPENROUTER_API_KEY="your_key_here" mobot
+docker run --rm -p 8000:8000 -e GEMINI_API_KEY="your_key_here" mobot
 ```
 
 Open `http://localhost:8000`.
@@ -276,14 +276,14 @@ Open `http://localhost:8000`.
 1. Push the repo to GitHub.
 2. Create a new Render Web Service from the repo.
 3. Render will read [render.yaml](render.yaml) and build the Docker image.
-4. Set `OPENROUTER_API_KEY` in Render environment variables.
+4. Set `GEMINI_API_KEY` in Render environment variables.
 5. Deploy and open the service URL.
-6. If OpenRouter blocks requests, set `OPENROUTER_REFERER` to your deployed URL (for example, the Render service URL).
+6. Optionally set `GEMINI_MODEL` (for example, `gemini-2.0-flash-lite`) in Render environment variables.
 
 Notes:
 
 - The frontend is served from the same app, so no separate static site is needed.
-- `OPENROUTER_API_KEY` is optional, but recommended for better extraction.
+- `GEMINI_API_KEY` is required for Gemini-based extraction; without it, the regex fallback is used.
 - If you use another platform, the Dockerfile can be reused as-is.
 
 Daily scheduler example is provided in:

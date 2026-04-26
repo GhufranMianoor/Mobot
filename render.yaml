@@ -9,6 +9,6 @@ services:
       - key: OPENROUTER_API_KEY
         sync: false
       - key: OPENROUTER_MODEL
-        value: anthropic/claude-3.5-sonnet
+        value: anthropic/claude-3.5-haiku
       - key: OPENROUTER_APP_NAME
         value: Mobot

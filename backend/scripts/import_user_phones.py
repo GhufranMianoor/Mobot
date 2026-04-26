@@ -50,7 +50,7 @@ def _source_url(source: str) -> str:
     if source == "HamariWeb":
         return "https://hamariweb.com"
     if source == "MegaPK":
-        return "https://megapk.com"
+        return "https://mega.pk"
     return ""
 
 

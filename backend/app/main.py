@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import statistics
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -163,52 +164,52 @@ def _natural_reply(specs: Dict, phones: list[Dict], tier: str, intent_mode: str,
 
 @app.get("/knn/diagnostics")
 def knn_diagnostics() -> Dict:
-    test_cases = [
-        {
-            "name": "Budget sanity",
-            "expected": "Budget",
-            "features": {
-                "ram_gb": 3,
-                "storage_gb": 32,
-                "camera_mp": 13,
-                "battery_mah": 4000,
-                "processor_tier": 0,
-            },
-        },
-        {
-            "name": "Mid-range sanity",
-            "expected": "Mid-Range",
-            "features": {
-                "ram_gb": 8,
-                "storage_gb": 128,
-                "camera_mp": 64,
-                "battery_mah": 5000,
-                "processor_tier": 1,
-            },
-        },
-        {
-            "name": "High-end sanity",
-            "expected": "High-End",
-            "features": {
-                "ram_gb": 12,
-                "storage_gb": 256,
-                "camera_mp": 50,
-                "battery_mah": 5000,
-                "processor_tier": 2,
-            },
-        },
-        {
-            "name": "Premium sanity",
-            "expected": "Premium",
-            "features": {
-                "ram_gb": 16,
-                "storage_gb": 512,
-                "camera_mp": 200,
-                "battery_mah": 5000,
-                "processor_tier": 2,
-            },
-        },
+    tier_specs = [
+        (0, "Budget"),
+        (1, "Mid-Range"),
+        (2, "High-End"),
+        (3, "Premium"),
     ]
+
+    test_cases = []
+    for label, tier_name in tier_specs:
+        class_rows = [row for row in classifier.rows if int(row["tier_label"]) == label]
+        if not class_rows:
+            continue
+
+        # Prefer a real sample that the current model already classifies correctly.
+        representative = None
+        best_conf = -1.0
+        for row in class_rows:
+            features = {
+                "ram_gb": float(row["ram_gb"]),
+                "storage_gb": float(row["storage_gb"]),
+                "camera_mp": float(row["camera_mp"]),
+                "battery_mah": float(row["battery_mah"]),
+                "processor_tier": float(row["processor_tier"]),
+            }
+            prediction = classifier.predict(features)
+            if prediction.label == label and prediction.confidence > best_conf:
+                best_conf = prediction.confidence
+                representative = features
+
+        if representative is None:
+            # Fallback: class medians, if no correctly classified sample is found.
+            representative = {
+                "ram_gb": float(statistics.median(float(r["ram_gb"]) for r in class_rows)),
+                "storage_gb": float(statistics.median(float(r["storage_gb"]) for r in class_rows)),
+                "camera_mp": float(statistics.median(float(r["camera_mp"]) for r in class_rows)),
+                "battery_mah": float(statistics.median(float(r["battery_mah"]) for r in class_rows)),
+                "processor_tier": float(statistics.median(float(r["processor_tier"]) for r in class_rows)),
+            }
+
+        test_cases.append(
+            {
+                "name": f"{tier_name} sanity",
+                "expected": tier_name,
+                "features": representative,
+            }
+        )
 
     checks = []
     pass_count = 0

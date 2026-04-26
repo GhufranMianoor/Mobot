@@ -14,19 +14,6 @@
       "scraped_at": "2026-04-20T12:56:40.172349"
     },
     {
-      "name": "Itel Vision 29",
-      "brand": "Itel",
-      "ram_gb": 3,
-      "storage_gb": 32,
-      "camera_mp": 13,
-      "battery_mah": 3200,
-      "processor_tier": 1,
-      "price_pkr": 5994,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:40.173271"
-    },
-    {
       "name": "Nokia 8",
       "brand": "Nokia",
       "ram_gb": 4,
@@ -144,19 +131,6 @@
       "scraped_at": "2026-04-20T12:56:39.863209"
     },
     {
-      "name": "Itel Vision 26",
-      "brand": "Itel",
-      "ram_gb": 4,
-      "storage_gb": 64,
-      "camera_mp": 13,
-      "battery_mah": 3000,
-      "processor_tier": 1,
-      "price_pkr": 11988,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:40.175191"
-    },
-    {
       "name": "Tecno Camon 13",
       "brand": "Tecno",
       "ram_gb": 3,
@@ -183,19 +157,6 @@
       "scraped_at": "2026-04-20T12:56:39.979708"
     },
     {
-      "name": "Infinix Zero 27",
-      "brand": "Infinix",
-      "ram_gb": 4,
-      "storage_gb": 64,
-      "camera_mp": 16,
-      "battery_mah": 3800,
-      "processor_tier": 1,
-      "price_pkr": 12987,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.850894"
-    },
-    {
       "name": "Itel Vision 15",
       "brand": "Itel",
       "ram_gb": 3,
@@ -207,19 +168,6 @@
       "source": "MegaPK",
       "url": "https://megapk.com",
       "scraped_at": "2026-04-20T12:56:40.174755"
-    },
-    {
-      "name": "Realme Note 28",
-      "brand": "Realme",
-      "ram_gb": 3,
-      "storage_gb": 32,
-      "camera_mp": 16,
-      "battery_mah": 2500,
-      "processor_tier": 1,
-      "price_pkr": 12987,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.790211"
     },
     {
       "name": "Nokia C16",
@@ -248,19 +196,6 @@
       "scraped_at": "2026-04-20T12:56:39.492432"
     },
     {
-      "name": "Sparx Edge 27",
-      "brand": "Sparx",
-      "ram_gb": 2,
-      "storage_gb": 32,
-      "camera_mp": 8,
-      "battery_mah": 2500,
-      "processor_tier": 1,
-      "price_pkr": 13986,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:40.168667"
-    },
-    {
       "name": "Realme GT 20",
       "brand": "Realme",
       "ram_gb": 3,
@@ -285,19 +220,6 @@
       "source": "WhatMobile",
       "url": "https://www.whatmobile.com.pk",
       "scraped_at": "2026-04-20T12:56:39.572645"
-    },
-    {
-      "name": "Infinix Hot 29",
-      "brand": "Infinix",
-      "ram_gb": 2,
-      "storage_gb": 32,
-      "camera_mp": 8,
-      "battery_mah": 3400,
-      "processor_tier": 1,
-      "price_pkr": 13986,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.875733"
     },
     {
       "name": "Oppo Reno 18",
@@ -378,19 +300,6 @@
       "scraped_at": "2026-04-20T12:56:39.335987"
     },
     {
-      "name": "Honor X25",
-      "brand": "Honor",
-      "ram_gb": 4,
-      "storage_gb": 128,
-      "camera_mp": 13,
-      "battery_mah": 3200,
-      "processor_tier": 2,
-      "price_pkr": 15984,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:40.097136"
-    },
-    {
       "name": "Oppo F20",
       "brand": "Oppo",
       "ram_gb": 4,
@@ -441,19 +350,6 @@
       "source": "WhatMobile",
       "url": "https://www.whatmobile.com.pk",
       "scraped_at": "2026-04-20T12:56:39.837873"
-    },
-    {
-      "name": "Tecno Pop 28",
-      "brand": "Tecno",
-      "ram_gb": 4,
-      "storage_gb": 64,
-      "camera_mp": 48,
-      "battery_mah": 2700,
-      "processor_tier": 2,
-      "price_pkr": 15984,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.953747"
     },
     {
       "name": "Infinix Hot 24",
@@ -664,19 +560,6 @@
       "scraped_at": "2026-04-20T12:56:39.571408"
     },
     {
-      "name": "Honor Magic 26",
-      "brand": "Honor",
-      "ram_gb": 4,
-      "storage_gb": 128,
-      "camera_mp": 13,
-      "battery_mah": 2900,
-      "processor_tier": 2,
-      "price_pkr": 19980,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:40.095600"
-    },
-    {
       "name": "Infinix Smart 18",
       "brand": "Infinix",
       "ram_gb": 4,
@@ -727,19 +610,6 @@
       "source": "MegaPK",
       "url": "https://megapk.com",
       "scraped_at": "2026-04-20T12:56:40.094376"
-    },
-    {
-      "name": "Infinix Note 29",
-      "brand": "Infinix",
-      "ram_gb": 3,
-      "storage_gb": 128,
-      "camera_mp": 50,
-      "battery_mah": 2900,
-      "processor_tier": 1,
-      "price_pkr": 19980,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.874112"
     },
     {
       "name": "Infinix Smart 10",
@@ -794,32 +664,6 @@
       "scraped_at": "2026-04-20T12:56:39.326077"
     },
     {
-      "name": "Oppo Reno 25",
-      "brand": "Oppo",
-      "ram_gb": 3,
-      "storage_gb": 128,
-      "camera_mp": 48,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 21978,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.638227"
-    },
-    {
-      "name": "Xiaomi Redmi Note 29",
-      "brand": "Xiaomi",
-      "ram_gb": 3,
-      "storage_gb": 64,
-      "camera_mp": 48,
-      "battery_mah": 2500,
-      "processor_tier": 2,
-      "price_pkr": 21978,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.569731"
-    },
-    {
       "name": "Vivo V28",
       "brand": "Vivo",
       "ram_gb": 6,
@@ -857,19 +701,6 @@
       "source": "HamariWeb",
       "url": "https://hamariweb.com",
       "scraped_at": "2026-04-20T12:56:39.646761"
-    },
-    {
-      "name": "Infinix Zero 29",
-      "brand": "Infinix",
-      "ram_gb": 4,
-      "storage_gb": 128,
-      "camera_mp": 50,
-      "battery_mah": 3300,
-      "processor_tier": 2,
-      "price_pkr": 22977,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.850401"
     },
     {
       "name": "Xiaomi Poco X9",
@@ -1054,19 +885,6 @@
       "scraped_at": "2026-04-24T08:00:00+00:00"
     },
     {
-      "name": "Samsung Galaxy A29",
-      "brand": "Samsung",
-      "ram_gb": 4,
-      "storage_gb": 128,
-      "camera_mp": 50,
-      "battery_mah": 2500,
-      "processor_tier": 2,
-      "price_pkr": 24975,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.446126"
-    },
-    {
       "name": "Sparx Edge 17",
       "brand": "Sparx",
       "ram_gb": 6,
@@ -1158,19 +976,6 @@
       "scraped_at": "2026-04-20T12:56:39.859135"
     },
     {
-      "name": "Infinix Smart 25",
-      "brand": "Infinix",
-      "ram_gb": 3,
-      "storage_gb": 64,
-      "camera_mp": 13,
-      "battery_mah": 3000,
-      "processor_tier": 1,
-      "price_pkr": 25974,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.869221"
-    },
-    {
       "name": "Xiaomi Poco M9",
       "brand": "Xiaomi",
       "ram_gb": 6,
@@ -1197,19 +1002,6 @@
       "scraped_at": "2026-04-20T12:56:39.977390"
     },
     {
-      "name": "Xiaomi Redmi Note 26",
-      "brand": "Xiaomi",
-      "ram_gb": 4,
-      "storage_gb": 128,
-      "camera_mp": 48,
-      "battery_mah": 3600,
-      "processor_tier": 2,
-      "price_pkr": 26973,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.574876"
-    },
-    {
       "name": "Realme C8",
       "brand": "Realme",
       "ram_gb": 6,
@@ -1234,19 +1026,6 @@
       "source": "MegaPK",
       "url": "https://megapk.com",
       "scraped_at": "2026-04-20T12:56:39.423162"
-    },
-    {
-      "name": "Oppo Reno 29",
-      "brand": "Oppo",
-      "ram_gb": 3,
-      "storage_gb": 128,
-      "camera_mp": 48,
-      "battery_mah": 3400,
-      "processor_tier": 2,
-      "price_pkr": 26973,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.648042"
     },
     {
       "name": "Xiaomi Poco M21",
@@ -1286,19 +1065,6 @@
       "source": "HamariWeb",
       "url": "https://hamariweb.com",
       "scraped_at": "2026-04-20T12:56:39.885437"
-    },
-    {
-      "name": "Infinix Zero 25",
-      "brand": "Infinix",
-      "ram_gb": 4,
-      "storage_gb": 64,
-      "camera_mp": 48,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 27972,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.862675"
     },
     {
       "name": "Tecno Camon 23",
@@ -1379,32 +1145,6 @@
       "scraped_at": "2026-04-20T12:56:40.164056"
     },
     {
-      "name": "Xiaomi Poco X28",
-      "brand": "Xiaomi",
-      "ram_gb": 3,
-      "storage_gb": 128,
-      "camera_mp": 48,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 27972,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.558592"
-    },
-    {
-      "name": "Realme Note 27",
-      "brand": "Realme",
-      "ram_gb": 4,
-      "storage_gb": 128,
-      "camera_mp": 50,
-      "battery_mah": 2600,
-      "processor_tier": 2,
-      "price_pkr": 27972,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.836984"
-    },
-    {
       "name": "Realme C11",
       "brand": "Realme",
       "ram_gb": 4,
@@ -1429,19 +1169,6 @@
       "source": "HamariWeb",
       "url": "https://hamariweb.com",
       "scraped_at": "2026-04-20T12:56:39.642242"
-    },
-    {
-      "name": "Tecno Spark 28",
-      "brand": "Tecno",
-      "ram_gb": 4,
-      "storage_gb": 128,
-      "camera_mp": 50,
-      "battery_mah": 2700,
-      "processor_tier": 2,
-      "price_pkr": 28971,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.975307"
     },
     {
       "name": "Honor X15",
@@ -1782,19 +1509,6 @@
       "scraped_at": "2026-04-20T12:56:39.770373"
     },
     {
-      "name": "Oppo Find X25",
-      "brand": "Oppo",
-      "ram_gb": 4,
-      "storage_gb": 256,
-      "camera_mp": 50,
-      "battery_mah": 3000,
-      "processor_tier": 2,
-      "price_pkr": 32967,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.649446"
-    },
-    {
       "name": "Oppo F23",
       "brand": "Oppo",
       "ram_gb": 6,
@@ -1806,19 +1520,6 @@
       "source": "WhatMobile",
       "url": "https://www.whatmobile.com.pk",
       "scraped_at": "2026-04-20T12:56:39.651391"
-    },
-    {
-      "name": "Huawei Nova 25",
-      "brand": "Huawei",
-      "ram_gb": 6,
-      "storage_gb": 128,
-      "camera_mp": 48,
-      "battery_mah": 3600,
-      "processor_tier": 2,
-      "price_pkr": 33966,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:40.083651"
     },
     {
       "name": "Realme C6",
@@ -1897,19 +1598,6 @@
       "source": "HamariWeb",
       "url": "https://hamariweb.com",
       "scraped_at": "2026-04-20T12:56:39.724349"
-    },
-    {
-      "name": "Tecno Spark 29",
-      "brand": "Tecno",
-      "ram_gb": 6,
-      "storage_gb": 256,
-      "camera_mp": 13,
-      "battery_mah": 2700,
-      "processor_tier": 1,
-      "price_pkr": 35964,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.877981"
     },
     {
       "name": "Tecno Spark 24",
@@ -2042,19 +1730,6 @@
       "scraped_at": "2026-04-20T12:56:39.544330"
     },
     {
-      "name": "Infinix Note 25",
-      "brand": "Infinix",
-      "ram_gb": 6,
-      "storage_gb": 128,
-      "camera_mp": 48,
-      "battery_mah": 2800,
-      "processor_tier": 2,
-      "price_pkr": 38961,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.864214"
-    },
-    {
       "name": "Samsung Galaxy M8",
       "brand": "Samsung",
       "ram_gb": 4,
@@ -2146,19 +1821,6 @@
       "scraped_at": "2026-04-20T12:56:39.462189"
     },
     {
-      "name": "Huawei Mate 29",
-      "brand": "Huawei",
-      "ram_gb": 8,
-      "storage_gb": 128,
-      "camera_mp": 108,
-      "battery_mah": 2500,
-      "processor_tier": 2,
-      "price_pkr": 43956,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:40.073118"
-    },
-    {
       "name": "Samsung Galaxy S18",
       "brand": "Samsung",
       "ram_gb": 6,
@@ -2235,19 +1897,6 @@
       "source": "WhatMobile",
       "url": "https://www.whatmobile.com.pk",
       "scraped_at": "2026-04-20T12:56:39.973638"
-    },
-    {
-      "name": "Infinix Smart 27",
-      "brand": "Infinix",
-      "ram_gb": 6,
-      "storage_gb": 256,
-      "camera_mp": 108,
-      "battery_mah": 3200,
-      "processor_tier": 2,
-      "price_pkr": 44955,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.861474"
     },
     {
       "name": "Realme C15",
@@ -2575,19 +2224,6 @@
       "scraped_at": "2026-04-20T12:56:39.984556"
     },
     {
-      "name": "Oppo Reno 27",
-      "brand": "Oppo",
-      "ram_gb": 6,
-      "storage_gb": 128,
-      "camera_mp": 50,
-      "battery_mah": 3000,
-      "processor_tier": 2,
-      "price_pkr": 57942,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.644546"
-    },
-    {
       "name": "Honor Play 27",
       "brand": "Honor",
       "ram_gb": 4,
@@ -2692,19 +2328,6 @@
       "scraped_at": "2026-04-20T12:56:40.072524"
     },
     {
-      "name": "Honor Magic 27",
-      "brand": "Honor",
-      "ram_gb": 8,
-      "storage_gb": 256,
-      "camera_mp": 64,
-      "battery_mah": 3000,
-      "processor_tier": 2,
-      "price_pkr": 60939,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:40.095005"
-    },
-    {
       "name": "Xiaomi Poco M23",
       "brand": "Xiaomi",
       "ram_gb": 8,
@@ -2729,19 +2352,6 @@
       "source": "WhatMobile",
       "url": "https://www.whatmobile.com.pk",
       "scraped_at": "2026-04-20T12:56:39.980845"
-    },
-    {
-      "name": "Nokia X25",
-      "brand": "Nokia",
-      "ram_gb": 8,
-      "storage_gb": 256,
-      "camera_mp": 64,
-      "battery_mah": 3300,
-      "processor_tier": 2,
-      "price_pkr": 62937,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.988810"
     },
     {
       "name": "Vivo X7",
@@ -2848,19 +2458,6 @@
       "scraped_at": "2026-04-20T12:56:39.777476"
     },
     {
-      "name": "Oppo Find X27",
-      "brand": "Oppo",
-      "ram_gb": 6,
-      "storage_gb": 128,
-      "camera_mp": 64,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 65934,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.658961"
-    },
-    {
       "name": "Oppo Find X11",
       "brand": "Oppo",
       "ram_gb": 8,
@@ -2911,19 +2508,6 @@
       "source": "HamariWeb",
       "url": "https://hamariweb.com",
       "scraped_at": "2026-04-20T12:56:39.662266"
-    },
-    {
-      "name": "Xiaomi Poco X25",
-      "brand": "Xiaomi",
-      "ram_gb": 12,
-      "storage_gb": 256,
-      "camera_mp": 50,
-      "battery_mah": 3900,
-      "processor_tier": 2,
-      "price_pkr": 69930,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.548924"
     },
     {
       "name": "Vivo Y200",
@@ -3108,19 +2692,6 @@
       "scraped_at": "2026-04-20T12:56:39.679903"
     },
     {
-      "name": "Infinix Zero 28",
-      "brand": "Infinix",
-      "ram_gb": 12,
-      "storage_gb": 128,
-      "camera_mp": 64,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 76923,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.853242"
-    },
-    {
       "name": "Samsung Galaxy M5",
       "brand": "Samsung",
       "ram_gb": 6,
@@ -3210,19 +2781,6 @@
       "source": "WhatMobile",
       "url": "https://www.whatmobile.com.pk",
       "scraped_at": "2026-04-20T12:56:39.662816"
-    },
-    {
-      "name": "Xiaomi Redmi Note 25",
-      "brand": "Xiaomi",
-      "ram_gb": 12,
-      "storage_gb": 512,
-      "camera_mp": 50,
-      "battery_mah": 3300,
-      "processor_tier": 2,
-      "price_pkr": 82917,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.560188"
     },
     {
       "name": "Vivo T18",
@@ -3615,32 +3173,6 @@
       "scraped_at": "2026-04-20T12:56:40.074333"
     },
     {
-      "name": "Samsung Galaxy M26",
-      "brand": "Samsung",
-      "ram_gb": 6,
-      "storage_gb": 512,
-      "camera_mp": 108,
-      "battery_mah": 3300,
-      "processor_tier": 2,
-      "price_pkr": 119880,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.328855"
-    },
-    {
-      "name": "Apple iPhone 5 Pro",
-      "brand": "Apple",
-      "ram_gb": 12,
-      "storage_gb": 512,
-      "camera_mp": 108,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 120879,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.999210"
-    },
-    {
       "name": "Samsung Galaxy S16",
       "brand": "Samsung",
       "ram_gb": 12,
@@ -3966,19 +3498,6 @@
       "scraped_at": "2026-04-20T12:56:39.761472"
     },
     {
-      "name": "Vivo X25",
-      "brand": "Vivo",
-      "ram_gb": 12,
-      "storage_gb": 256,
-      "camera_mp": 50,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 170829,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.754250"
-    },
-    {
       "name": "Huawei Y12",
       "brand": "Huawei",
       "ram_gb": 12,
@@ -4003,19 +3522,6 @@
       "source": "WhatMobile",
       "url": "https://www.whatmobile.com.pk",
       "scraped_at": "2026-04-20T12:56:39.654856"
-    },
-    {
-      "name": "Samsung Galaxy F29",
-      "brand": "Samsung",
-      "ram_gb": 8,
-      "storage_gb": 256,
-      "camera_mp": 108,
-      "battery_mah": 3500,
-      "processor_tier": 2,
-      "price_pkr": 180819,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.326633"
     },
     {
       "name": "Apple iPhone 15 Pro Max",
@@ -4135,19 +3641,6 @@
       "scraped_at": "2026-04-24T08:00:00+00:00"
     },
     {
-      "name": "Apple iPhone 5",
-      "brand": "Apple",
-      "ram_gb": 8,
-      "storage_gb": 256,
-      "camera_mp": 108,
-      "battery_mah": 4000,
-      "processor_tier": 2,
-      "price_pkr": 240759,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:40.056859"
-    },
-    {
       "name": "Samsung Galaxy A21",
       "brand": "Samsung",
       "ram_gb": 12,
@@ -4213,19 +3706,6 @@
       "scraped_at": "2026-04-24T08:00:00+00:00"
     },
     {
-      "name": "Samsung Galaxy F27",
-      "brand": "Samsung",
-      "ram_gb": 12,
-      "storage_gb": 256,
-      "camera_mp": 50,
-      "battery_mah": 4800,
-      "processor_tier": 2,
-      "price_pkr": 281718,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.444983"
-    },
-    {
       "name": "OnePlus 19",
       "brand": "OnePlus",
       "ram_gb": 12,
@@ -4237,32 +3717,6 @@
       "source": "MegaPK",
       "url": "https://megapk.com",
       "scraped_at": "2026-04-20T12:56:40.108713"
-    },
-    {
-      "name": "Apple iPhone 8 Pro Max",
-      "brand": "Apple",
-      "ram_gb": 8,
-      "storage_gb": 512,
-      "camera_mp": 108,
-      "battery_mah": 5500,
-      "processor_tier": 2,
-      "price_pkr": 342657,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:40.058699"
-    },
-    {
-      "name": "Samsung Galaxy A26",
-      "brand": "Samsung",
-      "ram_gb": 12,
-      "storage_gb": 1024,
-      "camera_mp": 200,
-      "battery_mah": 4500,
-      "processor_tier": 2,
-      "price_pkr": 347652,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.479073"
     },
     {
       "name": "OnePlus Nord CE 10",
@@ -4291,19 +3745,6 @@
       "scraped_at": "2026-04-20T12:56:39.991962"
     },
     {
-      "name": "Samsung Galaxy S29",
-      "brand": "Samsung",
-      "ram_gb": 12,
-      "storage_gb": 512,
-      "camera_mp": 108,
-      "battery_mah": 6100,
-      "processor_tier": 2,
-      "price_pkr": 408591,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.343727"
-    },
-    {
       "name": "Samsung Galaxy F15",
       "brand": "Samsung",
       "ram_gb": 8,
@@ -4330,45 +3771,6 @@
       "scraped_at": "2026-04-20T12:56:39.325497"
     },
     {
-      "name": "Samsung Galaxy S26",
-      "brand": "Samsung",
-      "ram_gb": 12,
-      "storage_gb": 256,
-      "camera_mp": 50,
-      "battery_mah": 5200,
-      "processor_tier": 2,
-      "price_pkr": 461538,
-      "source": "HamariWeb",
-      "url": "https://hamariweb.com",
-      "scraped_at": "2026-04-20T12:56:39.341635"
-    },
-    {
-      "name": "Apple iPhone 10 Pro",
-      "brand": "Apple",
-      "ram_gb": 16,
-      "storage_gb": 256,
-      "camera_mp": 108,
-      "battery_mah": 6500,
-      "processor_tier": 2,
-      "price_pkr": 477522,
-      "source": "MegaPK",
-      "url": "https://megapk.com",
-      "scraped_at": "2026-04-20T12:56:39.990057"
-    },
-    {
-      "name": "Apple iPhone 9",
-      "brand": "Apple",
-      "ram_gb": 12,
-      "storage_gb": 256,
-      "camera_mp": 108,
-      "battery_mah": 5500,
-      "processor_tier": 2,
-      "price_pkr": 495504,
-      "source": "WhatMobile",
-      "url": "https://www.whatmobile.com.pk",
-      "scraped_at": "2026-04-20T12:56:39.995915"
-    },
-    {
       "name": "Apple iPhone 15",
       "brand": "Apple",
       "ram_gb": 12,
@@ -4381,5 +3783,6 @@
       "url": "https://megapk.com",
       "scraped_at": "2026-04-20T12:56:40.051172"
     }
-  ]
+  ],
+  "record_count": 291
 }

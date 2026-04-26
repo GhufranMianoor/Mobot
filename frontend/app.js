@@ -49,7 +49,6 @@ function renderResults(data) {
 
     const link = node.querySelector(".source-link");
     link.textContent = phone.source;
-    link.href = phone.url;
 
     fragment.appendChild(node);
   }

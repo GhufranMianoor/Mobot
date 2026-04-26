@@ -26,10 +26,23 @@ class Recommender:
         self.phones_path = phones_path
         self.phones = self._load_phones()
 
+    def _normalize_phone_url(self, url: str) -> str:
+        if not url:
+            return url
+        return (
+            url.replace("https://www.megapk.com", "https://mega.pk")
+            .replace("https://megapk.com", "https://mega.pk")
+            .replace("https://www.megapk.com.pk", "https://mega.pk")
+        )
+
     def _load_phones(self) -> List[Dict]:
         with self.phones_path.open("r", encoding="utf-8") as f:
             payload = json.load(f)
-        return payload["phones"]
+        phones = payload["phones"]
+        for phone in phones:
+            if str(phone.get("source", "")).strip().lower() == "megapk":
+                phone["url"] = self._normalize_phone_url(str(phone.get("url") or ""))
+        return phones
 
     def recommend(self, specs: Dict, tier: Optional[str], top_k: int = 3) -> List[Dict]:
         budget = specs.get("budget_pkr")

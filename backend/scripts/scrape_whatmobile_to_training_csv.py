@@ -175,8 +175,7 @@ def scrape_phone_links() -> List[tuple[str, int, str]]:
 def scrape_megapk_live() -> List[PhoneRow]:
     # MegaPK domain may be unavailable or parked; keep this as best-effort live scrape.
     urls = [
-        "https://www.megapk.com/mobile-phones",
-        "https://www.megapk.com.pk/mobile-phones",
+        "https://mega.pk/mobile-phones",
     ]
 
     rows: List[PhoneRow] = []
@@ -202,7 +201,7 @@ def scrape_megapk_live() -> List[PhoneRow]:
             if href.startswith("http"):
                 link = href
             elif href.startswith("/"):
-                link = f"https://www.megapk.com{href}"
+                link = f"https://mega.pk{href}"
             else:
                 link = url
 
@@ -261,7 +260,7 @@ def load_megapk_from_cache() -> List[PhoneRow]:
                 processor_tier=int(phone.get("processor_tier") or 1),
                 tier_label=_price_to_tier_label(price),
                 source="MegaPK",
-                source_url=str(phone.get("url") or "https://www.megapk.com"),
+                source_url=str(phone.get("url") or "https://mega.pk"),
             )
         )
 

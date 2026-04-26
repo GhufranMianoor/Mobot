@@ -202,7 +202,7 @@ def scrape_hamariweb() -> List[PhoneRecord]:
 
 
 def scrape_megapk() -> List[PhoneRecord]:
-    url = "https://www.megapk.com/"
+    url = "https://mega.pk/"
     html = _safe_get(url)
     if not html:
         return []
@@ -231,15 +231,6 @@ def scrape_megapk() -> List[PhoneRecord]:
     return records
 
 
-def _load_existing() -> List[Dict]:
-    if not CACHE_FILE.exists():
-        return []
-
-    with CACHE_FILE.open("r", encoding="utf-8") as f:
-        payload = json.load(f)
-    return payload.get("phones", [])
-
-
 def _dedupe_by_name_keep_lowest(records: Iterable[Dict]) -> List[Dict]:
     best: Dict[str, Dict] = {}
 
@@ -258,8 +249,6 @@ def _dedupe_by_name_keep_lowest(records: Iterable[Dict]) -> List[Dict]:
 def run() -> None:
     print("Starting scrape and cache update...")
 
-    existing = _load_existing()
-
     live: List[PhoneRecord] = []
     live.extend(scrape_whatmobile())
     live.extend(scrape_hamariweb())
@@ -268,11 +257,10 @@ def run() -> None:
     live_dicts = [r.to_dict() for r in live]
 
     if not live_dicts:
-        print("No live records collected. Keeping existing cache unchanged.")
-        print(f"Current cache records: {len(existing)}")
+        print("No live records collected. Cache was not updated.")
         return
 
-    merged = _dedupe_by_name_keep_lowest([*existing, *live_dicts])
+    merged = _dedupe_by_name_keep_lowest(live_dicts)
 
     payload = {
         "phones": merged,
