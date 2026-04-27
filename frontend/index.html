@@ -3,28 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobot Smart Search</title>
+    <title>Mobot Terminal Search</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="search-shell">
       <header class="topbar">
-        <h1>Mobot</h1>
-        <button id="knnCheckButton" class="ghost-btn" type="button" aria-label="Run k-NN diagnostics">k-NN Check</button>
+        <div class="window-controls" aria-hidden="true">
+          <span class="window-control is-close"></span>
+          <span class="window-control is-minimize"></span>
+          <span class="window-control is-maximize"></span>
+        </div>
+        <h1>mobot@ubuntu: ~</h1>
+        <button id="knnCheckButton" class="ghost-btn" type="button" aria-label="Run k-NN diagnostics">diag --knn</button>
       </header>
 
+      <nav class="terminal-menu" aria-label="Terminal menu">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+        <span>Search</span>
+        <span>Terminal</span>
+        <span>Help</span>
+      </nav>
+
       <section class="hero">
-        <p class="eyebrow">Smart Search Engine</p>
-        <h2>Mobot Search</h2>
-        <br>
+        <p class="eyebrow">Terminal Search Engine</p>
+        <h2>Search with natural language</h2>
+        <p class="terminal-hint"><span class="prompt">mobot@ubuntu:~$</span> type a query or hit a preset</p>
 
         <form id="searchForm" class="search-form" role="search">
           <label for="queryInput" class="sr-only">Search phones</label>
-          <input id="queryInput" type="text" autocomplete="off" required placeholder="Search phones with natural language..." />
-          <button type="submit">Search</button>
+          <input id="queryInput" type="text" autocomplete="off" required placeholder="mobot search 'gaming phone under 80k'" />
+          <button type="submit">run</button>
         </form>
 
         <section class="chips" id="chips" aria-label="Quick searches">
