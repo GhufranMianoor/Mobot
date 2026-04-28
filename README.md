@@ -1,19 +1,19 @@
 # Mobot
 
-AI-Driven Mobile Phone Price Tier Classifier and Recommender (Chatbot Edition)
+AI-Driven Mobile Phone Price Tier Classifier and Recommender
 
 Version: v2.0 (Lightweight)
 Date: April 2026
-Status: Draft - Updated (Gemini)
+Status: Draft - Updated
 
 ## 1. Project Overview
 
 ### 1.1 Summary
-Mobot is a lightweight conversational web app that helps Pakistani users find high-value mobile phones within budget. Users ask in plain English or Urdu-English mixed language, and the system:
+Mobot is a lightweight web app (conversational-style UI optional) that helps Pakistani users find high-value mobile phones within budget. Users ask in plain English or Urdu-English mixed language, and the system:
 
 1. extracts preferences from text,
 2. predicts a price tier with a lightweight k-NN model,
-3. returns top 3 phone recommendations from cached Pakistani market data.
+3. returns ranked phone recommendations from cached Pakistani market data.
 
 ### 1.2 Problem Statement
 Pakistani buyers struggle with:
@@ -23,21 +23,21 @@ Pakistani buyers struggle with:
 - no intelligent conversational shortlist.
 
 ### 1.3 Solution
-A single chatbot UI backed by FastAPI:
+A web UI backed by FastAPI (conversational-style interface optional):
 
-- Google Gemini is the primary extraction layer.
-- Regex parser is the fallback if Gemini fails or is unavailable.
-- A lightweight, in-project k-NN implementation predicts budget tier.
-- Cached JSON phone data is filtered and ranked to return top options.
+- NLP extractor is configurable; an external LLM provider may be used but is not required. A built-in regex extractor is included as a fallback.
+- A lightweight, in-project k-NN implementation predicts price tiers.
+- Cached JSON phone data is filtered and ranked to return recommended options.
 
 ## 2. Goals and Non-Goals
 
 ### 2.1 Goals
-- Deliver a working chatbot UI (HTML/CSS/Vanilla JS).
-- Build a FastAPI backend with `POST /chat` and `GET /health`.
+-- Deliver a working web UI (HTML/CSS/Vanilla JS). The interface supports conversational-style interactions but the system is API-driven.
+-- Build a FastAPI backend with `POST /chat` and `GET /health`.
 - Keep dependencies minimal and startup fast.
 - Support Urdu-English mixed budget and spec queries.
 - Return ranked top-3 phones with links.
+-- Deliver a working web UI (HTML/CSS/Vanilla JS). The interface is search-engine style (search box, autocomplete, filters) and the system is API-driven.
 
 ### 2.2 Non-Goals
 - No authentication.
@@ -51,27 +51,26 @@ A single chatbot UI backed by FastAPI:
 ### 3.1 Tech Stack
 - Frontend: HTML5, CSS3, Vanilla JS
 - Backend: Python 3.11+, FastAPI, Uvicorn
-- NLP: Gemini API (primary), Regex fallback
+-- NLP: Configurable extractor (external LLM optional), Regex fallback
 - Classifier: Custom in-memory k-NN (no heavy ML runtime required)
 - Data Store: JSON files (`phones.json`, `training_data.json`)
 
 ### 3.2 Request Pipeline
-1. User submits message from chat UI.
-2. Frontend sends `POST /chat`.
-3. Backend extracts specs via Gemini.
-4. If Gemini fails/times out, backend uses regex parser.
-5. k-NN predicts tier.
-6. Recommender filters + ranks cached phones.
-7. API returns top 3 results and metadata.
+1. User submits message from the frontend UI.
+2. Frontend sends `POST /chat` (or other API endpoint as configured).
+3. Backend extracts specs using the configured NLP extractor (external provider optional) or the built-in regex parser.
+4. k-NN predicts tier.
+5. Recommender filters + ranks cached phones.
+6. API returns ranked results and metadata.
 
 ### 3.3 NLP Fallback Logic
 ```python
 try:
-		specs = gemini_extract(query)
-		nlp_source = "gemini"
+    specs = external_nlp_extract(query)  # optional external provider
+    nlp_source = "external"
 except Exception:
-		specs = regex_extract(query)
-		nlp_source = "regex"
+    specs = regex_extract(query)
+    nlp_source = "regex"
 ```
 
 ## 4. Feature Specifications
@@ -127,7 +126,13 @@ Top 3 by `value_score` are returned.
 - Result cards with tier badge and confidence
 - Quick-reply chips
 - Responsive desktop/mobile layout
-- `nlp_source` shown in result card
+- `nlp_source` shown in result card when available
+### 4.4 Frontend UI
+- Search box with optional autocomplete and quick filters
+- Result list with cards showing tier badge, confidence, price, and source
+- Sorting and filtering controls (budget, brand, deal filters)
+- Responsive desktop/mobile layout
+- `nlp_source` shown in result card when available
 
 ## 5. Data Strategy
 
@@ -249,16 +254,18 @@ Set your Gemini key for smarter extraction:
 export GEMINI_API_KEY="your_key_here"
 ```
 
-## 12. Data Refresh (Step 1)
+## 12. Data Refresh & Notes
 
-Run cache updater script:
+This repository has been cleaned to keep only runtime artifacts. The app requires the following data files in `backend/data`:
 
-```bash
-cd backend
-python scripts/scrape_and_update_cache.py
-```
+- `training_data.json` — pre-built training samples used by the in-project classifier
+- `phones.json` — cached, deduped market data used by the recommender
 
-## 13. Deployment
+Several auxiliary CSVs and ad-hoc scripts that were previously used to build the training dataset have been removed to declutter the repo. If you need to recreate or extend the training set, the helper scripts used previously are archived outside this repo (contact the maintainer) or you can rebuild by collecting source CSVs and producing `training_data.json`.
+
+To update the cached phone dataset in a deployed system, run your own scraper or update process and replace `backend/data/phones.json`. The API exposes diagnostics and a k-NN sanity endpoint (`GET /knn/diagnostics`) which can be used to validate the classifier behavior.
+
+## 13. Deployment (unchanged)
 
 Recommended path: one Docker web service that serves both the frontend and backend.
 
@@ -286,54 +293,10 @@ Notes:
 - `GEMINI_API_KEY` is required for Gemini-based extraction; without it, the regex fallback is used.
 - If you use another platform, the Dockerfile can be reused as-is.
 
-Daily scheduler example is provided in:
+## 14. Model evaluation & diagnostics
 
-`backend/scripts/cron_daily_cache_update.example`
+The repository exposes runtime diagnostics via the API. Useful endpoints:
 
-## 13. k-NN Evaluation (Step 2)
+- `GET /knn/diagnostics` — small sanity checks and class distribution
 
-Run evaluation (80/20 split, best-k search, confusion matrix, report):
-
-```bash
-cd backend
-PYTHONPATH=. python scripts/evaluate_knn.py
-```
-
-## 14. k-NN Model Check File
-
-Run sanity checks with predefined feature cases:
-
-```bash
-cd backend
-PYTHONPATH=. python scripts/check_knn_model.py
-```
-
-## 15. Scraped Training CSV
-
-Generate a larger CSV dataset from WhatMobile for model training:
-
-```bash
-cd backend
-PYTHONPATH=. python scripts/scrape_whatmobile_to_training_csv.py
-```
-
-Output file:
-
-`backend/data/training_mobile_specs.csv`
-
-## 16. External Dataset + Merge
-
-Added external market dataset file:
-
-`backend/data/amazon_market_dataset.csv`
-
-Generate merged clean training set (existing scrape + external):
-
-```bash
-cd backend
-PYTHONPATH=. python scripts/merge_training_sources.py
-```
-
-Merged output:
-
-`backend/data/training_merged_clean.csv`
+For offline evaluation, the previous helper scripts were removed; you can perform evaluation programmatically by importing `app.classifier.LightweightKNN` and writing a short evaluation script (for example, perform an 80/20 split on `training_data.json` and compute accuracy/confusion matrix). The codebase still contains a lightweight evaluation flow within `backend/app/classifier.py` utilities such as `select_best_k()`.

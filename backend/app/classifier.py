@@ -6,7 +6,17 @@ import random
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
+
+# Optional sklearn-based implementation if installed
+try:
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.preprocessing import MinMaxScaler
+    _SKLEARN_AVAILABLE = True
+except Exception:
+    KNeighborsClassifier = None  # type: ignore
+    MinMaxScaler = None  # type: ignore
+    _SKLEARN_AVAILABLE = False
 
 FEATURES = ["ram_gb", "storage_gb", "camera_mp", "battery_mah", "processor_tier"]
 TIER_LABELS = {
@@ -25,7 +35,13 @@ class PredictionResult:
 
 
 class LightweightKNN:
-    def __init__(self, data_path: Path | None = None, k: int = 5, rows: List[Dict] | None = None) -> None:
+    def __init__(
+        self,
+        data_path: Path | None = None,
+        k: int = 5,
+        rows: List[Dict] | None = None,
+        use_sklearn: Optional[bool] = None,
+    ) -> None:
         self.data_path = data_path
         self.k = k
         if rows is not None:
@@ -34,7 +50,19 @@ class LightweightKNN:
             if self.data_path is None:
                 raise ValueError("Either data_path or rows must be provided")
             self.rows = self._load_data()
+
         self.feature_stats = self._feature_min_max()
+
+        # Decide whether to use sklearn: follow explicit flag, else autodetect availability
+        if use_sklearn is None:
+            self.use_sklearn = _SKLEARN_AVAILABLE
+        else:
+            self.use_sklearn = bool(use_sklearn) and _SKLEARN_AVAILABLE
+
+        self._sklearn_model = None
+        self._scaler = None
+        if self.use_sklearn:
+            self._build_sklearn_model()
 
     def _load_data(self) -> List[Dict]:
         with self.data_path.open("r", encoding="utf-8") as f:
@@ -61,6 +89,24 @@ class LightweightKNN:
         return math.sqrt(sum((x - y) ** 2 for x, y in zip(a, b)))
 
     def predict(self, query_features: Dict[str, float]) -> PredictionResult:
+        # If sklearn backend is available and enabled, use it for prediction
+        if self.use_sklearn and self._sklearn_model is not None and self._scaler is not None:
+            vec = [float(query_features.get(f, 0)) for f in FEATURES]
+            scaled = self._scaler.transform([vec])
+            # get k neighbors distances and indices
+            dists, idxs = self._sklearn_model.kneighbors(scaled, n_neighbors=min(self.k, len(self.rows)))
+            neighbor_labels = [int(self.rows[i]["tier_label"]) for i in idxs[0]]
+            votes = Counter(neighbor_labels)
+            winner, winner_count = votes.most_common(1)[0]
+            confidence = winner_count / max(1, len(neighbor_labels))
+
+            return PredictionResult(
+                label=winner,
+                tier=TIER_LABELS.get(winner, "Mid-Range"),
+                confidence=round(confidence, 2),
+            )
+
+        # Fallback to pure-python implementation
         query_vec = self._vectorize(query_features)
         distances: List[Tuple[float, int]] = []
 
@@ -81,6 +127,27 @@ class LightweightKNN:
             tier=TIER_LABELS.get(winner, "Mid-Range"),
             confidence=round(confidence, 2),
         )
+
+    def _build_sklearn_model(self) -> None:
+        if not _SKLEARN_AVAILABLE:
+            return
+
+        X = []
+        y = []
+        for row in self.rows:
+            vec = [float(row.get(f, 0)) for f in FEATURES]
+            X.append(vec)
+            y.append(int(row["tier_label"]))
+
+        if not X:
+            return
+
+        # Scale features to [0,1] to match previous normalization behavior
+        self._scaler = MinMaxScaler()
+        X_scaled = self._scaler.fit_transform(X)
+
+        self._sklearn_model = KNeighborsClassifier(n_neighbors=min(self.k, len(X)))
+        self._sklearn_model.fit(X_scaled, y)
 
 
 def _accuracy_for_k(train_rows: List[Dict], test_rows: List[Dict], k: int) -> float:
